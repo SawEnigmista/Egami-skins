@@ -643,7 +643,7 @@
 		<widget name="lb_aspectratio" position="180,460" size="730,40" font="Regular;32" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="lb_videosize"   position="180,510" size="400,40" font="Regular;32" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
 		<ePixmap pixmap="icons/inet.png" position="70,570" size="90,55" alphatest="blend" zPosition="2" />
-		<widget name="ecminfo" position="180,590" size="730,380" font="Regular;29" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
+		<widget name="ecminfo" position="180,570" size="730,380" font="Regular;29" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="EG02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
