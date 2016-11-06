@@ -815,7 +815,9 @@
 		<widget name="Preview" position="160,495" size="640,360" zPosition="1" /> 
 		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 		<ePixmap position="320,988" pixmap="buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" /> 
-		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" /> <ePixmap position="565,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" /> <eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,985" size="180,46" text="Cancel" /> 
+		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="565,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,985" size="180,46" text="Cancel" /> 
 		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="360,985" size="180,46" text="Save" /> 
 		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="605,985" size="380,46" text="Reboot" /> 
 	</screen>
