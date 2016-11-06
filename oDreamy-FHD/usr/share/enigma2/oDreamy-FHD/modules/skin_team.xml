@@ -812,7 +812,7 @@
 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" /> 
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" /> 
 		<widget name="config" font="Regular; 28" itemHeight="44" position="70,180" scrollbarMode="showOnDemand" size="810,160" /> 
-		<widget name="Preview" position="160,495" size="640,360" zPosition="1" /> 
+		<widget name="Preview" position="60,395" size="840,472" zPosition="1" /> 
 		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 		<ePixmap position="320,988" pixmap="buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" /> 
 		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
