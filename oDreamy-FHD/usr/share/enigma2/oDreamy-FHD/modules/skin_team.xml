@@ -643,7 +643,7 @@
 		<widget name="lb_aspectratio" position="180,460" size="730,40" font="Regular;32" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="lb_videosize"   position="180,510" size="400,40" font="Regular;32" zPosition="2" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
 		<ePixmap pixmap="icons/inet.png" position="70,570" size="90,55" alphatest="blend" zPosition="2" />
-		<widget name="ecminfo" position="180,590" size="730,380" font="Regular;29" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
+		<widget name="ecminfo" position="180,570" size="730,380" font="Regular;29" zPosition="2" foregroundColor="#58bcff" backgroundColor="header" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="EG02" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -812,10 +812,12 @@
 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" /> 
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" /> 
 		<widget name="config" font="Regular; 28" itemHeight="44" position="70,180" scrollbarMode="showOnDemand" size="810,160" /> 
-		<widget name="Preview" position="160,495" size="640,360" zPosition="1" /> 
+		<widget name="Preview" position="60,395" size="840,472" zPosition="1" /> 
 		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 		<ePixmap position="320,988" pixmap="buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" /> 
-		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" /> <ePixmap position="565,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" /> <eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,985" size="180,46" text="Cancel" /> 
+		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="565,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,985" size="180,46" text="Cancel" /> 
 		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="360,985" size="180,46" text="Save" /> 
 		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="605,985" size="380,46" text="Reboot" /> 
 	</screen>
