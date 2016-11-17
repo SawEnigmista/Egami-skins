@@ -2999,18 +2999,18 @@
 		<panel name="MI"/> 
 		<!-- List Channel -->
 		<widget name="list" position="70,180" size="840,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="0" backgroundColor="header" zPosition="1" />
-		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />
-		<widget name="playerlogo" position="1420,170" size="251,83"  alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="headertext" position="1275,300" size="600,80"  font="Regular;30" foregroundColor="yellow" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="console"    position="1265,350" size="600,120" font="Regular;28" foregroundColor="white"  halign="center" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="spinner"    position="1265,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
-		<widget name="spinner_1"  position="1280,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
-		<widget name="spinner_2"  position="1295,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
-		<widget name="spinner_3"  position="1310,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
-		<widget name="spinner_4"  position="1325,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
-		<widget name="cover"      position="1268,515" size="595,300" alphatest="blend" backgroundColor="header" transparent="1" zPosition="2" />
-		<ePixmap position="1270,38"  size="200,90"  pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
-		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_iptv.png" alphatest="blend"/>
+		<!--<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" />-->
+		<widget name="playerlogo" position="960,35" size="251,83" alphatest="blend" transparent="1" zPosition="4" />
+		<widget name="headertext" position="1265,145" size="600,100" font="Regular;30" foregroundColor="yellow" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="console" position="1265,240" size="600,260" font="Regular;28" foregroundColor="white" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="spinner" position="1265,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_1" position="1280,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_2" position="1295,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_3" position="1310,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="spinner_4" position="1325,890" size="16,16" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="cover" position="1265,530" size="600,355" alphatest="blend" backgroundColor="header" transparent="1" zPosition="2" />
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_iptv.png" alphatest="blend" />
 	</screen>
 
 	<screen name="IPTVConfigBaseWidget" position="fill" title="IPTV Config" backgroundColor="transparent" flags="wfNoBorder" >
