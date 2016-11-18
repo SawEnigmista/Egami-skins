@@ -2616,80 +2616,74 @@
 		<widget name="key_green" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/key-green_line.png" position="320,500" size="150,2" alphatest="on" />
 	</screen>
 	
-<screen name="EMCMediaCenter" position="fill" title="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder">
-  <widget name="Cover" position="20,750" size="270,300" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
-  <ePixmap pixmap="oDreamy-FHD/menu/panels/infobar.png" position="0,840" size="1920,260" zPosition="-1" alphatest="blend" />
-  <!-- Picon -->
-  <widget source="session.CurrentService" render="Picon" path="picon" position="10,896" size="290,123" alphatest="blend" zPosition="1">
-  <convert type="ServiceName">Reference</convert>
-</widget>
-  <!-- Blinking pixmap (recording in progress) -->
-  <ePixmap pixmap="oDreamy-FHD/icons/icon_event.png" position="370,902" size="45,35" alphatest="blend" zPosition="1" />
-  <widget source="session.RecordState" render="Pixmap" position="370,902" size="45,35" pixmap="oDreamy-FHD/icons/icon_event_rec.png" alphatest="blend" zPosition="2">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <!-- *** Event (now) *** -->
-  <widget source="session.CurrentService" render="Label" position="425,890" size="140,40" font="Regular;30" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <!-- Progressbar (current event duration) -->
-  <eLabel position="550,898" size="1130,80" backgroundColor="#10303030" transparent="0" zPosition="1" />
-  <widget source="session.CurrentService" render="Progress" position="550,898" size="1130,80" pixmap="oDreamy-FHD/skin_default/progress_infobar80.png" backgroundColor="#10303030" zPosition="2">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="555,898" size="1045,80" font="Regular;34" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="2" valign="top" halign="left">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <!-- Crypt icon (encrypted service?) -->
-  <widget source="session.CurrentService" render="Label" position="1470,937" size="200,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" halign="right" valign="center" transparent="1" zPosition="5">
-    <convert type="ServicePosition">Length</convert>
-  </widget>
-  <eLabel position="550,995" size="1130,40" backgroundColor="#10303030" transparent="0" zPosition="1" />
-  <!-- Videoformat icon (16:9?) -->
-  <ePixmap pixmap="oDreamy-FHD/icons/1/ico_format_off.png" position="1695,900" size="80,35" zPosition="1" alphatest="blend" />
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/1/ico_format_on.png" position="1695,900" size="80,35" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsWidescreen</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- HD icon -->
-    <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/1/ico_sd_on.png" position="1790,900" size="80,35" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsSD</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/1/ico_hd_on.png" position="1790,900" size="80,35" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsHD</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/1/ico_4k_on.png" position="1790,900" size="80,35" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">Is4K</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <!-- Audio icon (is there multichannel audio?) -->
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/1/ico_dolbys_on.png" position="1790,945" size="80,35" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsStereo</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/1/ico_dolby_on.png" position="1790,945" size="80,35" zPosition="2" alphatest="blend">
-    <convert type="ServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget backgroundColor="header" font="Regular; 28" halign="left" position="1459,995" render="Label" size="300,34" source="session.CurrentService" zPosition="2" transparent="1">
-    <convert type="PliExtraInfo">ResolutionString</convert>
-  </widget>
-  <!-- Clock -->
-  <widget source="global.CurrentTime" render="Label" position="1620,995" size="250,40" font="Regular;30" halign="right" foregroundColor="#606060" backgroundColor="header" transparent="1" zPosition="2">
-    <convert type="ClockToText">Format:%H:%M:%S</convert>
-  </widget>
-  <eLabel text="1: -10s" position="555,995" size="150,34" halign="center" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-  <eLabel text="4: -1m" position="857,995" size="148,34" halign="center" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-  <eLabel text="7: -5m" position="1157,995" size="150,34" halign="center" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-  <eLabel text="3: +10s" position="705,995" size="150,34" halign="center" font="Regular;30" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-  <eLabel text="6: +1m" position="1006,995" size="150,34" halign="center" font="Regular;30" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-  <eLabel text="9: +5m" position="1307,995" size="150,34" halign="center" font="Regular;30" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="6" />
-  <widget source="session.CurrentService" render="Label" position="425,940" size="140,40" font="Regular; 30" halign="left" foregroundColor="yellow" backgroundColor="#10000000">
-    <convert type="ServicePosition">Remaining</convert>
-   </widget>
-</screen>
+	<screen name="EMCMediaCenter" position="0,0" size="1920,1080" title="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,860" size="1920,270" backgroundColor="header" zPosition="-1" />
+		<eLabel position="0,860" size="1920,1" backgroundColor="bluette" zPosition="-1" />
+		<ePixmap pixmap="buttons/closebarmp.png" position="0,830" size="1720,60" zPosition="-1" alphatest="blend" />
+		<!-- Blinking pixmap (recording in progress) -->
+		<ePixmap position="1575,838" size="45,45" pixmap="buttons/rec_off.png" alphatest="blend" zPosition="1" />
+		<widget source="session.RecordState" render="Pixmap" position="1575,838" size="45,45" pixmap="buttons/rec_on.png" alphatest="blend" zPosition="2">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<!-- Servicename -->
+		<ePixmap position="60,912" size="220,132" pixmap="picon_default.png" zPosition="1" alphatest="blend" />
+		<widget name="Cover" position="10,750" size="270,300" zPosition="1" alphatest="on" backgroundColor="transparent" foregroundColor="transparent" />
+		<widget source="session.CurrentService" render="Label" position="316,840" size="1324,40" font="Regular;34" valign="top" noWrap="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- movie length -->
+		<eLabel text="Time :" position="1650,860" size="120,40" font="Regular;32" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
+		<widget source="session.CurrentService" render="Label" position="1720,860" size="150,40" font="Regular;32" halign="right" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<!-- Elapsed time -->
+		<widget source="session.CurrentService" render="Label" position="300,935" size="140,50" font="Regular;42" halign="right" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<!-- Progressbar (movie position)-->
+		<eLabel position="460,960" size="960,2" backgroundColor="bluette" zPosition="1" />
+		<widget source="session.CurrentService" render="Progress" position="460,958" size="960,6" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="360,597" size="620,5" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<!-- Remaining time -->
+		<widget source="session.CurrentService" render="Label" position="1450,935" size="250,50" font="Regular;42" halign="left" foregroundColor="red" backgroundColor="header" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate</convert>
+		</widget>
+		<!-- Audio icon (is there multichannel audio?) -->
+		<ePixmap pixmap="icons/ico_dolby_off.png" position="320,1000" size="200,50" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_dolby_on.png" position="320,1000" size="150,50" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- HDTV icon -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_hd_off.png" position="500,1000" size="150,50" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">0,720</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_hd_on.png" position="500,1000" size="150,50" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Videoformat icon (16:9?) -->
+		<ePixmap pixmap="icons/ico_format_off.png" position="680,1000" size="150,50" zPosition="1" alphatest="blend" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_format_on.png" position="680,1000" size="150,50" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- Panel Video Resolution  -->
+		<widget source="session.CurrentService" render="Label" position="720,1010" size="200,50" font="Regular;40" halign="right" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" position="930,1010" size="25,50" font="Regular;40" foregroundColor="unffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<widget source="session.CurrentService" render="Label" position="960,1010" size="200,50" font="Regular;40" halign="left" foregroundColor="unffffff" backgroundColor="bluette" transparent="1" zPosition="3">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+	</screen>
  
 	<!-- ********** Meteo ForeCa Prevision ********** P037 FHD -->
 
