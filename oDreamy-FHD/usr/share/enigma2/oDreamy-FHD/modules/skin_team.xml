@@ -1312,7 +1312,7 @@
 		<panel name="sRG"/>
 		<!--panel name="M"/-->
 		<ePixmap position="1220,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="config"      position="70,180" size="1160,720" itemHeight="40" font="xRegular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="config"      position="70,180" size="1160,720" itemHeight="40" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="description" position="1260,560" size="610,300" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" zPosition="2" />
