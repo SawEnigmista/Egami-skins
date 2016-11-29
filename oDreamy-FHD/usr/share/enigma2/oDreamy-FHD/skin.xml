@@ -1257,7 +1257,7 @@
 		<panel name="p800_DateMid"/>
 		<panel name="nRGYB"/>
 		<panel name="I"/>
-		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<eLabel text="Exit" position="1390,985" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="timerlist" position="70,180" size="820,675" font="Regular;32" itemHeight="75" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="950,645" size="256,256" pixmap="menu/timer_edit.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S116" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
