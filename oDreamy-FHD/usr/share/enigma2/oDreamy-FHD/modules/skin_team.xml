@@ -802,7 +802,7 @@
 			</convert>
 		</widget>
 		<ePixmap position="60,970" size="700,90" pixmap="icons/team_logo.png" alphatest="blend" zPosition="2" />
-		<ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" />
+		<!--ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" /-->
 	</screen>
 
 	<screen name="oDreamySetup" position="fill" title="oDreamy_FHD Skin Controler" backgroundColor="transparent" flags="wfNoBorder">
