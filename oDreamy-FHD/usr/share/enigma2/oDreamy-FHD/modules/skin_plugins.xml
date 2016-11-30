@@ -3465,7 +3465,9 @@
 		<widget name="weekday5_icon" position="1510,820" size="240,200" zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/oDreamy/msn2/,png</convert>
     </widget>
-		<ePixmap position="35,980" size="81,40" zPosition="10" pixmap="buttons/key_menu.png" transparent="1" alphatest="on" />
+    <eLabel position="20,45" size="110,90" backgroundColor="transpBlack" zPosition="1" />
+    <eLabel text="MENU" position="30,55" size="115,34" halign="left" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" />
+    <eLabel text="EXIT" position="30,90" size="113,34" halign="left" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" />
 	</screen>
 
 	<!--* MSNWeatherPlugin -->
