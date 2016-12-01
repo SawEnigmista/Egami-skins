@@ -2356,38 +2356,58 @@
 
 	<!-- ********** Enhanced Movie Center ********** P036 FHD -->
 
- 	<screen name="EMCSelection" position="fill" title="Enhanced Movie Center" backgroundColor="#FF000000" flags="wfNoBorder"> <panel name="p800_Template" /> 
-		<panel name="p800_Date" /> 
+ 	<screen name="EMCSelection" position="fill" title="Enhanced Movie Center" backgroundColor="#FF000000" flags="wfNoBorder"> 
 		<panel name="nRGYB" /> 
-		<panel name="MI" /> 
 		<eLabel position="1260,30" size="610,96" backgroundColor="#201b3c85" zPosition="-2" /> 
 		<eLabel position="1262,32" size="606,92" backgroundColor="#20000000" zPosition="-2" /> 
-		<eLabel position="1260,140" size="610,210" backgroundColor="#201b3c85" zPosition="-2" /> 
-		<eLabel position="1260,357" size="610,585" backgroundColor="#20000000" zPosition="-2" /> 
-		<eLabel position="1260,345" size="610,10" backgroundColor="#FF000000" zPosition="-1" /> 
-		<widget alphatest="on" name="Cover" position="1262,363" size="605,571" zPosition="4" /> 
-		<widget name="list" position="70,180" size="1160,460" itemHeight="40" CoolFont="Regular;30" CoolSelectFont="Regular;30" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#ffffff" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="bluette" foregroundColorSelected="#ffffff" backgroundColor="header" scrollbarMode="showNever" transparent="1" zPosition="1" />
+		<eLabel position="1260,464" size="610,586" backgroundColor="#20000000" zPosition="-2" />
+                <eLabel position="1252,140" size="618,318" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,355" size="610,0" backgroundColor="#FF000000" zPosition="-1" /> 
+		<widget alphatest="on" name="Cover" position="1262,473" size="605,571" zPosition="4" /> 
+		<widget name="list" position="70,160" size="1780,280" itemHeight="40" CoolFont="Regular;30" CoolSelectFont="Regular;30" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#ffffff" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="bluette" foregroundColorSelected="#ffffff" backgroundColor="header" scrollbarMode="showNever" transparent="1" zPosition="1" />
 		<!-- Panel Info -->
-		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" /> 
-		<ePixmap position="1275,156" size="120,120" pixmap="icons/miniinfo.png" alphatest="blend" zPosition="2" /> 
-		<widget source="Service" render="Label" position="1420,170" size="615,40" font="Regular; 32" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1"> 
+		<widget source="Service" render="Label" position="70,890" size="505,40" font="Regular; 32" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1"> 
 			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Date</convert>
 		</widget> 
-		<widget source="Service" render="Label" position="1420,225" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
+		<widget source="Service" render="Label" position="551,890" size="150,40" font="Regular; 36" halign="left" foregroundColor="white" backgroundColor="bluette" transparent="1">
 			<convert type="EMCServiceTime">StartTime</convert> <convert type="EMCClockToText">Format:%H:%M </convert>
 		</widget> 
-		<widget source="Service" render="Label" position="1530,225" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1"> 
+		<widget source="Service" render="Label" position="664,890" size="150,40" font="Regular; 36" foregroundColor="yellow" backgroundColor="bluette" transparent="1"> 
 			<convert type="EMCServiceTime">EndTime</convert> <convert type="EMCClockToText">Format:- %H:%M </convert> 
 		</widget>
-		<widget source="Service" render="Label" position="1610,227" size="250,40" font="Regular; 32" halign="right" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
+		<widget source="Service" render="Label" position="715,890" size="250,40" font="Regular; 36" halign="right" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
 			<convert type="EMCMovieInfo">FileSize</convert> 
 		</widget>  
-		<widget source="Service" render="Label" position="1420,280" size="300,40" font="Regular; 36" halign="left" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
+		<widget source="Service" render="Label" position="997,890" size="300,40" font="Regular; 36" halign="left" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1"> 
 			<convert type="EMCServiceTime">Duration</convert> <convert type="EMCClockToText">Format:%Hh:%Mmin</convert> 
 		</widget>
-		<widget source="Service" render="Label" position="70,650" size="1160,260" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"> 
+		<widget source="Service" render="Label" position="70,455" size="1160,400" font="Regular;30" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2"> 
 			<convert type="EMCMovieInfo">ShortDescription</convert> 
 		</widget> 
+		<eLabel text="Menu" position="1120,35" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Info" position="1120,80" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel position="50,30" size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32" size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png" alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142" size="1200,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
+		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
+		<!-- Footer -->
+		<eLabel position="50,955" size="1200,95" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1018,51" size="90,60" pixmap="icons/select.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1265,32" size="264,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>	
+		<widget source="global.CurrentTime" render="Label" position="1550,30" size="300,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format %A %d %B</convert>
+		</widget>
 	</screen>
 	
 	<screen name="MovieMenu" position="fill" title="EMC menu" backgroundColor="transparent" flags="wfNoBorder">
