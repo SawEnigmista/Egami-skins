@@ -885,6 +885,20 @@
 		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />				
 </screen>
 	
+	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="sRGY" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+                <widget source="config" render="Label" position="70,180" size="830,50" halign="left" transparent="1" font="Regular; 34" backgroundColor="#00000000" foregroundColor="blue" />
+                <widget source="options" render="Label" position="70,240" size="830,35" halign="left" transparent="1" font="Regular; 28" backgroundColor="#00000000" foregroundColor="grey" />
+                <widget name="description" position="70,300" size="830,26" transparent="1" font="Regular; 24" foregroundColor="#00ffffff" halign="left" backgroundColor="#00000000" valign="grey" />
+		<ePixmap pixmap="menu/startboot.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+</screen>
+	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
 	<!-- ####################################### -->
