@@ -864,6 +864,27 @@
 		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />				
 </screen>
 	
+	
+	<screen name="IPTVDMWidget" title="IPTV Player download manager" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+                <panel name="sRGYB" />
+                <widget name="titel" position="70,160" size="820,40" font="Regular;30" backgroundColor="bluette" transparent="0" zPosition="1" />
+                <widget name="list" position="70,220" size="1165,700" font="Regular;28" itemHeight="70" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<eLabel position="50,30" size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32" size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png" alphatest="blend" zPosition="2" />
+		<!-- Middle -->
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142" size="1196,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
+		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
+		<!-- Footer -->
+		<eLabel position="50,955" size="1200,95" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />				
+</screen>
+	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
 	<!-- ####################################### -->
