@@ -4605,4 +4605,31 @@
 		</widget>
 	</screen>
 	
+	<screen name="SetupMenu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="nRGYB" />
+                <widget name="memory" position="70,545" zPosition="2" size="830,40" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="white" />
+                <widget name="slide" position="70,600" zPosition="2" borderWidth="1" size="820,8" backgroundColor="dark" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+                <widget name="config" position="70,180" size="830,420" font="Regular;28" itemHeight="45" zPosition="1" transparent="1" backgroundColor="#31000000" scrollbarMode="showOnDemand" />
+		<ePixmap pixmap="menu/startboot.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+</screen>
+	
+	<screen name="ClearMemInfoScreen" position="fill" title="ClearMem Info" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="nRGB" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+                <widget name="memtext" font="Regular;22" position="70,180" zPosition="2" valign="center" halign="left" size="230,720" backgroundColor="#31000000" transparent="1" />
+                <widget name="memvalue" font="Regular;22" position="750,180" zPosition="2" valign="center" halign="right" size="140,720" backgroundColor="#31000000" transparent="1" />
+		<ePixmap pixmap="menu/startboot.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+</screen>
+	
 </skin>
