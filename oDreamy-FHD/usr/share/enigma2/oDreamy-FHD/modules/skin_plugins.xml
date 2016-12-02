@@ -3044,16 +3044,6 @@
 		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_iptv.png" alphatest="blend"/>
 	</screen>
 
-	<screen name="IPTVDMWidget" position="fill" title="IPTV Player download manager" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p800_Template" />
-		<panel name="p800_Logo"/>
-		<panel name="p800_DateMid" />
-		<panel name="sRGYB"/>
-		<widget name="titel" position="70,180" size="820,40" font="Regular;30" backgroundColor="bluette" transparent="0" zPosition="1" />
-		<widget name="list"  position="70,260" size="600,480" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="2" />
-		<ePixmap  position="960,640" size="256,256" pixmap="menu/ico_iptv.png" alphatest="blend"/>
-	</screen>
-
 	<!-- **********  FTP ********** P044 FHD -->
 
 	<screen name="FTPBrowser" position="fill" title="FTP Browser" backgroundColor="transparent" flags="wfNoBorder">
