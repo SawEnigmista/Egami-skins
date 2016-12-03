@@ -822,8 +822,10 @@
 		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="605,985" size="380,46" text="Reboot" /> 
 	</screen>
 	
-        <screen name="ConfigMenu" title="IPTV Player - ustawienia" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+	        <screen name="ConfigMenu" title="IPTV Player - ustawienia" position="fill" backgroundColor="transparent" flags="wfNoBorder">
                 <panel name="sRG" />
+    		<panel name="p1800_Template" />
+    		<panel name="p800_DateMid" />
                 <widget name="config" position="70,180" size="1165,720" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
                 <widget name="footnote" position="1260,1840" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
                 <widget name="HelpWindow" position="80,700" size="1,1" transparent="1" zPosition="1" alphatest="on" />
@@ -837,14 +839,13 @@
 		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142" size="1196,795" backgroundColor="#20000000" zPosition="-1" />
 		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
-		<!-- Footer -->
-		<eLabel position="50,955" size="1200,95" backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />				
+		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />			
 </screen>
 	
 	<screen name="ConfigHostsMenu" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
                 <panel name="sRG" />
+     		<panel name="p1800_Template" />
+     		<panel name="p800_DateMid" />
                 <widget name="config" position="70,180" size="1165,720" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
                 <widget name="footnote" position="1260,1840" size="600,800" font="Regular;30" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
                 <widget name="HelpWindow" position="80,700" size="1,1" transparent="1" zPosition="1" alphatest="on" />
@@ -858,15 +859,14 @@
 		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142" size="1196,795" backgroundColor="#20000000" zPosition="-1" />
 		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
-		<!-- Footer -->
-		<eLabel position="50,955" size="1200,95" backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />				
+		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />	
 </screen>
 	
 	
 	<screen name="IPTVDMWidget" title="IPTV Player download manager" position="fill" backgroundColor="transparent" flags="wfNoBorder">
                 <panel name="sRGYB" />
+       		<panel name="p1800_Template" />
+       		<panel name="p800_DateMid" />
                 <widget name="titel" position="70,160" size="820,40" font="Regular;30" backgroundColor="bluette" transparent="0" zPosition="1" />
                 <widget name="list" position="70,220" size="1165,700" font="Regular;28" itemHeight="70" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
 		<eLabel position="50,30" size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
@@ -879,10 +879,7 @@
 		<eLabel position="50,140" size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142" size="1196,795" backgroundColor="#20000000" zPosition="-1" />
 		<eLabel position="50,136" size="860,10" backgroundColor="bluette" zPosition="0" />
-		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />
-		<!-- Footer -->
-		<eLabel position="50,955" size="1200,95" backgroundColor="#201b3c85" zPosition="-1" />
-		<eLabel position="52,957" size="1198,93" backgroundColor="#20000000" zPosition="-1" />				
+		<eLabel position="900,934" size="350,10" backgroundColor="bluette" zPosition="0" />		
 </screen>
 	
 	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder">
