@@ -1372,9 +1372,9 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<!-- FullDescription  Interlinea 23 size 450 -->
-		<widget source="Event" render="Label" position="1270,420" size="590,420" font="Regular;32" foregroundColor="#a0a0a0" backgroundColor="bluette" valign="top" halign="center" noWrap="1" transparent="1" zPosition="1" >
-			<convert type="EventName">FullDescription</convert>
-		</widget>
+		<widget source="Event" render="Label" position="1270,420" size="590,420" font="Regular;32" foregroundColor="#a0a0a0" backgroundColor="bluette" valign="bottom" halign="left" transparent="1" zPosition="1">
+                        <convert type="EventName">FullDescription</convert>
+                </widget>
 		<ePixmap pixmap="picon_default.png" position="1280,150" size="220,132" alphatest="blend" zPosition="2" />
 		<widget name="number" position="990,500" size="250,100" font="Regular;34" halign="left" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
 		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
