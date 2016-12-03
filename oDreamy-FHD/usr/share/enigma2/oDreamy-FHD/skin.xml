@@ -3205,11 +3205,11 @@
 	</screen>
 	
 	<!-- Event View Context Menu FHD -->
-	<screen name="EventViewSimple" title="Eventview Simple" position="120,130" size="1680,890" backgroundColor="#10000000">
-		<widget name="datetime" position="40,20" size="350,60" font="Regular;36" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="450,20" size="200,60" font="Regular;36" foregroundColor="red" backgroundColor="#10000000" transparent="1" noWrap="1" valign="top" halign="left" />
+       <screen name="EventViewSimple" title="Eventview Simple" position="120,130" size="1680,890" backgroundColor="#10000000">
+		<widget name="datetime" position="40,20" size="420,60" font="Regular;36" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget name="duration" position="465,20" size="200,60" font="Regular;36" foregroundColor="red" backgroundColor="#10000000" transparent="1" noWrap="1" valign="top" halign="left" />
 		<eLabel position="40,100" size="1600,1" backgroundColor="#202020" zPosition="1" />
-		<widget name="FullDescription" position="40,130" size="1600,740" font="Regular; 36" foregroundColor="#73c6ff" backgroundColor="#10000000" transparent="1" />
+		<widget name="FullDescription" position="40,130" size="1600,740" font="Regular; 36" foregroundColor="#73c6ff" backgroundColor="#10000000" transparent="1" halign="left" />
 		<!--eLabel name="DEBUG" text="S232" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
