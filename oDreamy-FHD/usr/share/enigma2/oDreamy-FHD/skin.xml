@@ -1372,7 +1372,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<!-- FullDescription  Interlinea 23 size 450 -->
-		<widget source="Event" render="Label" position="1270,420" size="590,420" font="Regular;32" foregroundColor="#a0a0a0" backgroundColor="bluette" valign="bottom" halign="left" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="1270,420" size="590,420" font="Regular;32" foregroundColor="#a0a0a0" backgroundColor="bluette" valign="center" halign="left" transparent="1" zPosition="1">
                         <convert type="EventName">FullDescription</convert>
                 </widget>
 		<ePixmap pixmap="picon_default.png" position="1280,150" size="220,132" alphatest="blend" zPosition="2" />
@@ -1454,7 +1454,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<!-- FullDescription  Interlinea 23 size 450 -->
-		<widget source="Event" render="Label" position="1270,420" size="590,420" font="Regular;32" foregroundColor="#a0a0a0" backgroundColor="bluette" valign="top" halign="center" noWrap="1" transparent="1" zPosition="1" >
+		<widget source="Event" render="Label" position="1270,420" size="590,420" font="Regular;32" foregroundColor="#a0a0a0" backgroundColor="bluette" valign="center" halign="left" transparent="1" zPosition="1" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<ePixmap pixmap="picon_default.png" position="1280,150" size="220,132" alphatest="blend" zPosition="2" />
