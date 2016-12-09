@@ -587,6 +587,11 @@
 		<widget source="session.RecordState" render="Pixmap" position="1595,788" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="2">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
+		<!-- pixmap (Online Stream) -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="buttons/stream.png" position="1500,788" size="45,45" zPosition="1" alphatest="on">
+			<convert type="ClientsStreaming" />
+			<convert type="ConditionalShowHide" />
+		</widget>		
 		<!-- Picon -->
 		<widget source="session.CurrentService" render="Picon" position="5,845" size="400,170" alphatest="blend" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
