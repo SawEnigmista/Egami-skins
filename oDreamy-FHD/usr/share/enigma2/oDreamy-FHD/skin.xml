@@ -743,7 +743,7 @@
 	    <convert type="MSNWeather">city</convert>
 	  </widget>
 	  <ePixmap position="810,92" size="50,50" pixmap="oDreamy-FHD/icons/temp.png" alphatest="blend" zPosition="1" />
-	  <widget source="session.MSNWeather" render="Label" position="860,95" size="110,50" font="Regular; 40" halign="left" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="2">
+	  <widget source="session.MSNWeather" render="Label" position="860,95" size="120,50" font="Regular; 40" halign="left" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">temperature_current</convert>
 	  </widget>
 	  <ePixmap position="950,90" size="70,40" pixmap="oDreamy-FHD/icons/wind.png" alphatest="blend" zPosition="1" />
