@@ -221,7 +221,7 @@
 	<!-- Restart Panel FHD -->
         <screen name="QuitMainloopScreen" position="fill" backgroundColor="#201b3c85" flags="wfNoBorder">
 		<ePixmap position="620,400" size="600,132" pixmap="oDreamy-FHD/restart-shutdown.png" zPosition="1" alphatest="blend" />
-		<widget name="text" position="250,600" size="1370,100" zPosition="2" font="xRegular;45" halign="center" valign="center" foregroundColor="green" backgroundColor="#201b3c85" shadowColor="#201b3c85" shadowOffset="1,1" transparent="1" />
+		<widget name="text" position="250,600" size="1370,100" zPosition="2" font="Regular;45" halign="center" valign="center" foregroundColor="green" backgroundColor="#201b3c85" shadowColor="#201b3c85" shadowOffset="1,1" transparent="1" />
 		<!--eLabel name="DEBUG" text="S001" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
 	
@@ -1872,19 +1872,19 @@
 		<ePixmap pixmap="buttons/greypanel.png" position="70,420" size="30,30" zPosition="1" alphatest="blend"/>
 		<widget name="AdapterInfo_OK" 		 position="70,180"   size="30,30"  zPosition="2" pixmap="buttons/greenpanel.png" alphatest="blend"/>
 		<widget name="Adaptertext" 		 position="120,178"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>			
-		<widget name="Adapter" 			 position="1020,178" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="Adapter" 			 position="1020,178" size="200,60" zPosition="1" font="Regular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="NetworkInfo_Check"	 position="70,240"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="Networktext"		 position="120,238"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>		
-		<widget name="Network" 			 position="1020,238" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="Network" 			 position="1020,238" size="200,60" zPosition="1" font="Regular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="DhcpInfo_Check" 		 position="70,300"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="Dhcptext" 		 position="120,298"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>			
-		<widget name="Dhcp" 			 position="1020,298" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="Dhcp" 			 position="1020,298" size="200,60" zPosition="1" font="Regular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="IPInfo_Check" 		 position="70,360"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="IPtext" 			 position="120,358"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>			
-		<widget name="IP" 			 position="1020,358" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="IP" 			 position="1020,358" size="200,60" zPosition="1" font="Regular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="DNSInfo_Check" 		 position="70,420"   size="30,30"  zPosition="2" pixmaps="buttons/greenpanel.png,buttons/redpanel.png" alphatest="blend"/>
 		<widget name="DNStext" 			 position="120,418"  size="300,40" zPosition="1" font="Regular;32" foregroundColor="white" backgroundColor="header" transparent="1"/>		
-		<widget name="DNS" 			 position="1020,418" size="200,60" zPosition="1" font="xRegular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
+		<widget name="DNS" 			 position="1020,418" size="200,60" zPosition="1" font="Regular;24" halign="right" foregroundColors="#8c8c93,#f23d21,#538eff" backgroundColor="header" transparent="1"/>
 		<widget name="AdapterInfo" 		 position="315,178" size="200,40"  halign="center" zPosition="1"/>
 		<widget name="AdapterInfo_Text" 	 position="550,178" size="200,40"  halign="right"  zPosition="2" font="Regular;26" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="header"/>
 		<widget name="NetworkInfo" 		 position="315,238" size="200,50"  halign="center" zPosition="1"/>
@@ -2458,8 +2458,8 @@
 		<panel name="p800_DateMid" />
 		<panel name="nRGYB"/>
 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<widget name="infolist" position="70,180" font="xRegular;20" size="820,700" itemHeight="45" selectionDisabled="1" backgroundColor="header" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="70,850" size="685,30" font="xRegular;24" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
+		<widget name="infolist" position="70,180" font="Regular;26" size="820,700" itemHeight="45" selectionDisabled="1" backgroundColor="header" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" position="70,850" size="685,30" font="Regular;24" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 		<ePixmap position="960,640" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
@@ -3476,7 +3476,7 @@
 		<ePixmap position="1440,170" size="256,256" pixmap="menu/scansat.png" alphatest="blend" zPosition="2" />
 		<widget name="header" position="70,160" size="820,50" font="Regular;38" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="1"/>
 		<eLabel position="70,210" size="820,1" backgroundColor="#202020" />
-		<widget name="config"  position="70,220" size="1165,710" font="xRegular;28" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config"  position="70,220" size="1165,710" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="footer" position="0,0" size="0,0"/>
 		<eLabel text="Exit"   position="120,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
 		<eLabel text="Config" position="400,955" size="210,95" font="Regular;32" valign="center" backgroundColor="header" transparent="1" zPosition="1"/>
