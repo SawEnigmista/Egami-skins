@@ -273,7 +273,7 @@
 
 	<!-- NumberZapExt FHD -->
 	<screen name="NumberZapExt" position="654,463" size="700,160" title="Channel">
-	    	<widget name="chPicon" position="474,10"   size="220,132" alphatest="on" />
+	    	<widget name="chPicon" position="474,10"   size="220,132" alphatest="blend" />
 	    	<widget name="number"  position="5,35"     size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
 	    	<widget name="chNum"   position="210,34"   size="240,30" halign="left"  font="Regular;26" foregroundColor="white" />
 	    	<widget name="channel" position="5,77"     size="190,30" halign="right" font="Regular;26" foregroundColor="white" />
