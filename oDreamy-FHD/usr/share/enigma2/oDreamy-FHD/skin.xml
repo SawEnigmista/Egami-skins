@@ -4496,4 +4496,17 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
   <ePixmap position="1595,878" size="45,45" pixmap="oDreamy-FHD/buttons/rec_off.png" alphatest="blend" zPosition="1" />
   <ePixmap position="1714,1013" size="45,45" pixmap="oDreamy-FHD/buttons/rec_on.png" alphatest="blend" zPosition="1" />
 </screen>
+
+<screen name="DirectoryBrowser" title="Directory Browser" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Ext_BiN" />
+		<panel name="p800_Date" />
+		<panel name="sRG" />
+		<!--panel name="MI"/-->
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<widget name="filelist" position="70,235" size="1165,675" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="1440,170" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
+		<widget source="curdir" render="Label" position="140,175" size="1165,40" font="Regular; 34" halign="left" valign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" noWrap="1" />
+	</screen>	
 </skin>
