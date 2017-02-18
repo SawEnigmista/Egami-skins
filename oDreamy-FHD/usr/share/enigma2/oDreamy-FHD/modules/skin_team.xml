@@ -896,6 +896,76 @@
 		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 </screen>
 	
+	<screen name="ExtensionsList" position="fill" title="ExtensionsList" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="p800_Logo" />
+		<panel name="p800_Template" />
+		<panel name="p800_Ext_BiN" />
+		<panel name="p800_Date" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />	
+		<widget name="list" position="70,180" size="840,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
+		<ePixmap position="1275,175" zPosition="2" size="50,50" pixmap="icons/ram.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,190" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">MemTotal</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,200" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">MemTotal</convert>
+		</widget>
+		<ePixmap position="1275,240" zPosition="2" size="50,50" pixmap="icons/cpu.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,250" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGCpuUsage">$0</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,260" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGCpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
+		</widget>
+		<ePixmap position="1284,305" zPosition="2" size="50,50" pixmap="icons/flash.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,315" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">FleshInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,325" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">Flesh</convert>
+		</widget>
+		<ePixmap position="1275,365" zPosition="2" size="50,50" pixmap="icons/hdd_extensions.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,380" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">HddInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1335,390" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+			<convert type="EGLayoutInfo">HddInfo</convert>
+		</widget>
+		<ePixmap position="1275,430" zPosition="2" size="50,50" pixmap="icons/usb.png" alphatest="blend" />
+		<widget source="session.Event_Now" render="Progress" position="1335,445" size="500,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="#808080" borderWidth="1" zPosition="6">
+			<convert type="EGLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1336,455" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
+		  <convert type="EGLayoutInfo">UsbInfo</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1280,540" size="500,40" font="Regular;30" backgroundColor="#10000000" foregroundColor="#e8e9b1" transparent="1" zPosition="99">
+                         <convert type="EGStbInfo">All</convert>
+                </widget>
+    		<ePixmap pixmap="menu/info_screen.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />        
+		<widget source="session.CurrentService" render="Label" position="650,980" size="800,35" halign="left" valign="center" font="Regular; 32" transparent="1" foregroundColor="ltbluette" backgroundColor="header" zPosition="6">
+			<convert type="EGBoxInfo">Uptime</convert>
+		</widget>
+				<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+        <!-- eLabel name="DEBUG" text="PL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->		
+	</screen>
+	
+		<screen name="BitrateViewerSetup" position="fill" title="Bitrate viewer setup" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="p800_pig" />
+		<ePixmap position="320,988" pixmap="buttons/greenpanel.png" size="30,30" alphatest="blend" zPosition="2" /> 
+		<ePixmap position="70,988" pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="115,985" size="180,46" text="Cancel" /> 
+		<eLabel font="Regular; 30" foregroundColor="foreground" halign="left" position="360,985" size="180,46" text="Save/OK" />
+ 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+                <widget name="config" position="70,180" size="830,720" font="Regular;30" itemHeight="35" transparent="1" zPosition="3" />
+		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
+		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
 	<!-- ####################################### -->
@@ -1620,54 +1690,6 @@
 	<!-- ########### PLI TEAM PANELS ########### -->
 	<!-- ####################################### -->
 
-	<screen name="ExtensionsList" position="fill" title="ExtensionsList" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="p8000_Template"/>
-		<panel name="p800_Logo"/>
-		<panel name="p800_Date"/>
-		<panel name="p800_Ext"/>
-		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />	
-		<widget name="list" position="70,180" size="840,720" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3" />
-		<ePixmap position="1140,390" zPosition="2" size="50,50" pixmap="icons/ram.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="1200,400" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">MemTotal</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1200,410" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
-			<convert type="EGLayoutInfo">MemTotal</convert>
-		</widget>
-		<ePixmap position="1140,445" zPosition="2" size="50,50" pixmap="icons/cpu.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="1200,455" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
-			<convert type="EGCpuUsage">$0</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1200,465" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
-			<convert type="EGCpuUsage">CPU Utilization:$0 (Core #1: $1, Core #2: $2)</convert>
-		</widget>
-		<ePixmap position="1150,503" zPosition="2" size="50,50" pixmap="icons/flash.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="1200,510" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">FleshInfo</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1200,520" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
-			<convert type="EGLayoutInfo">Flesh</convert>
-		</widget>
-		<ePixmap position="1140,555" zPosition="2" size="50,50" pixmap="icons/hdd_extensions.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="1200,565" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">HddInfo</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1200,575" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
-			<convert type="EGLayoutInfo">HddInfo</convert>
-		</widget>
-		<ePixmap position="1140,610" zPosition="2" size="50,50" pixmap="icons/usb.png" alphatest="blend"/>
-		<widget source="session.Event_Now" render="Progress" position="1200,620" size="450,8" foregroundColor="ltbluette" backgroundColor="header" transparent="1" borderColor="bluette" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">UsbInfo</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1200,630" size="450,26" halign="left" valign="center" font="xRegular; 16" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
-		  <convert type="EGLayoutInfo">UsbInfo</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="450,980" size="800,35" halign="left" valign="center" font="xRegular; 32" transparent="1" foregroundColor="ltbluette" backgroundColor="header" zPosition="6">
-			<convert type="EGBoxInfo">Uptime</convert>
-		</widget>
-        <!-- eLabel name="DEBUG" text="PL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->		
-	</screen>
 
 	<screen name="PPanel" position="fill" title="PPanel Setting" backgroundColor="#FF000000" flags="wfNoBorder">
 		<panel name="ToplevelPPanel"/>
