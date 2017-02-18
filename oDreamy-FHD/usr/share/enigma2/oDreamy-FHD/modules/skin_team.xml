@@ -939,7 +939,7 @@
 		<widget source="session.CurrentService" render="Label" position="1336,455" size="500,26" halign="left" valign="center" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="header" zPosition="6">
 		  <convert type="EGLayoutInfo">UsbInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1280,540" size="500,40" font="Regular;30" backgroundColor="#10000000" foregroundColor="#e8e9b1" transparent="1" zPosition="99">
+		<widget source="session.CurrentService" render="Label" position="1280,540" size="500,100" font="Regular;30" backgroundColor="#10000000" foregroundColor="#e8e9b1" transparent="1" zPosition="99">
                          <convert type="EGStbInfo">All</convert>
                 </widget>
     		<ePixmap pixmap="menu/info_screen.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />        
