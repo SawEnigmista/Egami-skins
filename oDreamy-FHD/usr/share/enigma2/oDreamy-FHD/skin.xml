@@ -2893,7 +2893,7 @@
 		<widget source="menu" render="Listbox" position="45,180" size="845,720" scrollbarMode="showOnDemand" transparent="1" zPosition="5" 
  			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
- 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 0)],
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (830, 60), flags = RT_HALIGN_LEFT, text = 1)],
  				"fonts": [gFont("Regular", 35)],
  				"itemHeight": 60
  				}
