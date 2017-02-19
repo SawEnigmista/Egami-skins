@@ -966,6 +966,25 @@
 		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 	
+	<screen name="j00zekBouquets" position="fill" title="j00zekBouquets @j00zek" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" /> 
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="nRGYB" />
+		<widget name="config" font="Regular; 28" itemHeight="44" position="60,180" size="840,720" scrollbarMode="showOnDemand"/> 
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
+	</screen>
+	
+	<screen name="GOSconsole" position="fill" title="Command execution..." backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" /> 
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<widget name="text" position="70,180" size="840,720" font="Console;22"/> 
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
+		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
+	</screen>
+	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
 	<!-- ####################################### -->
