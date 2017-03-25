@@ -896,6 +896,28 @@
 		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
 </screen>
 	
+	<screen name="IPTVChoiceBoxWidget" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" /> 
+		<panel name="p800_Logo" /> 
+		<panel name="p800_DateMid" />
+		<widget source="title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" /> 
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" /> 
+                <widget name="list" position="70,180" size="820,720" font="Regular;30" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+</screen>
+	
+	<screen name="ConfigHostMenu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" /> 
+		<panel name="p800_Logo" /> 
+		<panel name="p800_DateMid" />
+		<panel name="sRG" />
+		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" /> 
+		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" /> 
+                <widget name="config" position="70,180" size="820,720" font="Regular;28" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+</screen>
+	
 	<screen name="MultiBootStartupOPT" position="fill" title="MultiBoot STARTUP Selector" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
