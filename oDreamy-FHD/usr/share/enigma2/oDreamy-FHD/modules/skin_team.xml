@@ -779,7 +779,7 @@
 			      }
 			  </convert>
 		</widget>
-		<widget name="info" position="70,734" size="840,234" font="Regular; 32" halign="center" transparent="1" backgroundColor="#10000000" foregroundColor="blue" />
+		<widget name="info" position="70,830" size="840,234" font="Regular; 30" halign="center" transparent="1" backgroundColor="#10000000" foregroundColor="blue" />
 		<eLabel text="Rango Polskie Listy Kanalow" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/ico_listch.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
@@ -986,7 +986,7 @@
         <!-- eLabel name="DEBUG" text="PL01" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->		
 	</screen>
 	
-		<screen name="BitrateViewerSetup" position="fill" title="Bitrate viewer setup" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="BitrateViewerSetup" position="fill" title="Bitrate viewer setup" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
@@ -1020,6 +1020,148 @@
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<ePixmap pixmap="menu/setup_selection.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 	</screen>
+	
+	<screen name="Master" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="Seto" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="HSWG" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="Fk" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="K80" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="Ritcher" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="Djcrash" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRGYB"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="130,40" font="Regular;32" halign="left" transparent="1" />
+	        <widget name="typ0" position="330,190" size="100,40" font="Regular;32" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="typ2" position="330,370" size="100,40" font="Regular;32" foregroundColor="yellow" halign="left" transparent="1" />
+		<widget name="typ3" position="580,370" size="100,40" font="Regular;32" foregroundColor="blue" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats4x" position="330,440" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats20x" position="580,440" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion4x" position="330,480" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion20x" position="580,480" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>
+	
+	<screen name="MasterPicon" title="" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="sRG"/>
+		<ePixmap position="960,640" size="256,256" pixmap="menu/scansat.png" alphatest="blend"/>
+		<widget name="typ" position="85,190" size="200,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ0" position="330,190" size="800,40" font="Regular;32" halign="left" transparent="1" />
+		<widget name="typ1" position="580,190" size="100,40" font="Regular;32" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="sats0" position="85,260" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="sats1x" position="330,260" size="190,25" font="Regular;24" foregroundColor="red" halign="left" transparent="1" />
+		<widget name="sats2x" position="580,260" size="290,25" font="Regular;24" foregroundColor="green" halign="left" transparent="1" />
+		<widget name="new0" position="85,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion1x" position="330,300" size="190,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="newVersion2x" position="580,300" size="290,25" font="Regular;24" halign="left" transparent="1" />
+		<widget name="status" position="85,820" size="780,40" font="Regular;30" halign="center" valign="center" transparent="1" />
+	</screen>	
 	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
