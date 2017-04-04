@@ -659,11 +659,11 @@
 		<widget source="session.CurrentService" render="Label" position="1665,860" size="250,26" font="Regular;23" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="3">
 			<convert type="EGExtraInfo">E-C-N</convert>
 		</widget>
- 		<widget source="session.CurrentService" render="Label" position="1665,895" size="250,26" font="Regular;23" halign="center" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
+ 		<widget source="session.CurrentService" render="Label" position="1665,895" size="250,26" font="Regular;23" halign="center" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3">
 			<convert type="EGExtraInfo">CamName</convert>
 		</widget>
 		<!-- Cam Name  -->
-		<widget source="session.CurrentService" render="Label" position="1665,930" size="250,26" font="Regular;23" halign="center" foregroundColor="#808080" backgroundColor="#10101010" transparent="1" zPosition="3">
+		<widget source="session.CurrentService" render="Label" position="1680,930" size="250,26" font="Regular;23" halign="center" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="3">
 			<convert type="EGExtraInfo">EcmInfo</convert>
 		</widget>
 		<widget backgroundColor="black" font="Regular; 24" halign="center" position="1665,965" render="Label" size="250,26" source="session.CurrentService" transparent="1">
