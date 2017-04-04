@@ -1171,7 +1171,7 @@
 		<panel name="sRG" />
 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
                 <widget name="config" position="70,180" size="820,540" font="Regular;32" itemHeight="55" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<widget name="description"     position="1270,500" size="580,400" font="Regular;32" halign="center" scrollbarMode="showOnDemand" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />		
+		<widget name="description"     position="170,700" size="580,540" font="Regular;32" halign="center" scrollbarMode="showOnDemand" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />	
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<ePixmap pixmap="menu/timer_edit.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" /> 
 	</screen>
