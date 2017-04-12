@@ -757,7 +757,7 @@
 	  <eLabel position="1480,148" size="440,5" backgroundColor="bluette" zPosition="-1" />
 	  <eLabel position="1360,150" size="560,1" backgroundColor="bluette" zPosition="-1" />
 	  <!-- *** Panel SatType *** -->
-          <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv1.png" alphatest="blend" position="1370,40" size="160,100" zPosition="2" transparent="1">
+          <widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv1.png" alphatest="blend" position="1370,75" size="100,100" zPosition="2" transparent="1">
              <convert type="ServiceInfo">IsStream</convert>
              <convert type="ConditionalShowHide">
              </convert>
