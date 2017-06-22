@@ -3404,7 +3404,7 @@
 	<!-- **********  MSN Weather ********** 52 FHD -->
 
 	<screen name="MSNWeatherPlugin" position="fill" title="Weather Plugin" backgroundColor="transparent" flags="wfNoBorder" >
-		<ePixmap pixmap="icons/msn/msnback.png"          position="0,0"     size="1920,1080" alphatest="blend" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="icons/msn/msnback.png"          position="0,0"     size="1920,1080" alphatest="1" transparent="1" zPosition="-1" />
 		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="350,60"  size="28,120"    alphatest="blend" transparent="1" zPosition="3"  />
 		<widget source="currentTemp"   render="Label"    position="400,55"  size="250,120"   font="Regular;70" foregroundColor="yellow"  backgroundColor="header" transparent="1" zPosition="3" />
 		<widget source="feelsliketemp" render="Label"    position="350,150" size="300,120"   font="Regular;34" foregroundColor="white"   backgroundColor="header" transparent="1" zPosition="3" />
@@ -3996,6 +3996,13 @@
 		<ePixmap position="960,640" size="256,256" pixmap="menu/setup_selection.png" alphatest="blend"/>
 	</screen>
 	
+	<!-- ********** TimeDate Imput ********** P072 -->
+
+	<screen name="TimeDateInput" position="fill" title="TimeDateInput" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="config" position="70,110" size="700,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="header" foregroundColor="white" backgroundColorSelected="header" foregroundColorSelected="ltbluette" transparent="1" />
+		<widget name="canceltext" position="70,638" size="170,30" zPosition="1" valign="center" font="global_button;20" halign="left" noWrap="1" foregroundColor="header" backgroundColor="header" transparent="1" />
+		<widget name="oktext" position="253,638" size="170,30" zPosition="1" valign="center" font="global_button;20" halign="left" noWrap="1" foregroundColor="header" backgroundColor="header" transparent="1" />
+	</screen>
 
 	<!-- ********** Input Streaming Clients FHD ********** P073 -->
 
@@ -4462,155 +4469,7 @@
 		<widget  name="key_blue"     position="920,125" size="210,40" zPosition="1" font="Regular;30" halign="right" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
-	<!-- ********** XC Plugin FHD ********** P090 -->
 
-	<screen name="nPlaylist" position="0,0" size="1920,1080" title="IpTV Play List" backgroundColor="#ff000000" flags="wfNoBorder" >
-		<!-- Panel -->
-		<ePixmap position="0,0"     size="1920,1080" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/fullpanel.png" zPosition="-1" />
-		<eLabel  position="51,126"  size="80,817"    backgroundColor="#05303030" zPosition="-1" />
-		<ePixmap position="60,35"   size="80,80"     pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/list.png"  alphatest="blend" zPosition="1" />
-		<ePixmap position="45,28"   size="70,70"     pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/angle30.png" alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
-		<widget name="playlist"  position="150,30" size="1100,80" font="Regular;50" valign="center" backgroundColor="#10000000" foregroundColor="ltbluette" transparent="0" zPosition="5" />
-		<!-- Clock -->
-		<widget source="global.CurrentTime" render="Label" position="1500,30" size="360,80" font="Regular;32" halign="right" valign="center" foregroundColor="#606060" backgroundColor="header" transparent="1" zPosition="2" >
-			<convert type="ClockToText">Format %A %d %B %H:%M:%S</convert>
-		</widget>
-		<!-- Lista Contenuti -->
-		<widget name="feedlist" position="60,135" size="1220,800" foregroundColorSelected="#ffffff" backgroundColor="#20000000"
-		        selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/slider50.png" scrollbarMode="showOnDemand" 
-		        foregroundColor="#ffffff" backgroundColorSelected="#05303030" enableWrapAround="1" zPosition="1" transparent="1" /> 
-		<ePixmap position="1510,175" size="160,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/player.png" alphatest="blend" transparent="1" zPosition="1" />
-		<eLabel  position="1300,310" size="620,10" backgroundColor="#FF000000" zPosition="-1" />
-		<widget name = "poster"      position="1300,125" size="575,820" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/clear.png" zPosition="2" transparent="1" alphatest="blend" />
-		<widget name = "description" position="1310,340" size="550,565" font="Regular;30" halign="center" backgroundColor="#10000000" foregroundColor="#74b1fe" transparent="1" />
-		<widget name = "info"        position="1310,140" size="550,615" font="Regular;30" halign="center" backgroundColor="#10000000" foregroundColor="#ffffff" transparent="1" /> 
-		<widget name = "pixmap2"     position="370,990"  size="250,80"  zPosition="1" transparent="1" alphatest="blend" />
-		<widget name = "pixmap3"     position="620,655"  size="250,80"  zPosition="1" transparent="1" alphatest="blend" />
-		<widget name = "pixmap4"     position="870,655"  size="250,80"  zPosition="1" transparent="1" alphatest="blend" />		
-		<widget name = "pixmap2a"    position="259,990"  size="32,25"   zPosition="3" transparent="1" alphatest="blend" />
-		<widget name = "chminus"     position="285,990"  zPosition="4"  size="150,24" halign="center" font="Regular;22" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000"  />
-		<widget name = "pixmap3a"    position="463,990"  size="32,25"   zPosition="3" transparent="1" alphatest="blend" />
-		<widget name = "chplus"      position="496,990"  zPosition="4"  size="150,24" halign="center" font="Regular;22" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000"  />
-		<widget name = "pixmap4a"    position="667,990"  size="32,25"   zPosition="3" transparent="1" alphatest="blend" />
-		<widget name = "stop"        position="700,990"  zPosition="4"  size="150,24" halign="center" font="Regular;22" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000"  />		   
-		<ePixmap position="70,990" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/redpanel.png"    zPosition="3" transparent="1" alphatest="blend" />
-		<eLabel text="HOME" position="115,988" zPosition="4" size="250,40" halign="left" font="Regular;30" transparent="1" foregroundColor="#ffffff" backgroundColor="#41000000" />
-		<eLabel text="Mod By mmark" position="1320,990" zPosition="4" size="560,40" halign="center" font="Regular;30" transparent="1" foregroundColor="#808080" backgroundColor="#10000000" />
-		<widget name="version" position="1320,990" size="0,40" font="Regular;30" halign="left" foregroundColor="#ffffff" backgroundColor="#41000000" transparent="1" zPosition="4" />
-	</screen>
-
-	<!-- PLAYER -->
-	<screen name="Xtream_Player" position="0,800" size="1920,280" backgroundColor="#FF000000" flags="wfNoBorder" title="Videoplayer">
-		<ePixmap position="0,0"  size="1700,70" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/closebar.png" alphatest="blend" transparent="1" zPosition="5" />
-		<eLabel  position="0,35" size="1920,250" transparent="0" backgroundColor="#10000000" zPosition="4" />
-		<ePixmap position="50,95" size="160,96" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/player.png" alphatest="blend" transparent="1" zPosition="5" />
-		<widget name="cover" position="1720, 10" size="120,160" transparent="1" alphatest="blend" zPosition="1" />
-		<ePixmap position="50,20" size="45,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/icon_event.png" alphatest="blend" transparent="1" zPosition="5" />
-		<widget source="session.CurrentService" foregroundColor="#ffffff" render="Label" position="120,10" size="1650,50" font="Regular;46" backgroundColor="#10000000" transparent="1" zPosition="10">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Blinking pixmap (recording in progress) -->
-		<ePixmap position="1640,15" size="45,45" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/rec_off.png" alphatest="blend" zPosition="5" />
-		<widget source="session.RecordState" render="Pixmap" position="1640,15" size="45,45" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/rec_on.png" alphatest="blend" zPosition="5" >
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<!-- Clock %d.%m.%Y - %H:%M:%S -->
-		<widget source="global.CurrentTime" render="Label" position="1520,35" size="350,40" font="Regular;36" halign="right" foregroundColor="#404040" backgroundColor="header" transparent="1" zPosition="5" >
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="180,90" size="200,50" font="Regular;40" halign="right" valign="center" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" zPosition="10">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="180,145" size="200,50" font="Regular;40" halign="right" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="10">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-		<eLabel  position="400,140" size="1270,2" backgroundColor="#303030" transparent="0" zPosition="4" />
-		<widget source="session.CurrentService" render="Progress" position="400,136" size="1270,10" backgroundColor="#10202020" transparent="1" zPosition="5">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="1720,115" size="200,50" font="Regular;40" halign="left" valign="center" foregroundColor="red" backgroundColor="#10000000" transparent="1" zPosition="5" >
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<ePixmap position="55,213" size="35,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/bluepanel.png" alphatest="blend" transparent="1" zPosition="6" /> 
-		<widget name="cont_play" position="105,211" size="300,70" halign="left" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" zPosition="7" /> 		
-		<!-- Audio icon (is there multichannel audio?) -->
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/ico_dolby_off.png" position="1180,188" size="200,50"  alphatest="blend" zPosition="5" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/ico_dolby_on.png" position="1180,188" size="150,50" alphatest="blend" zPosition="6" >
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<!-- HDTV icon -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/ico_hd_off.png" position="1360,188" size="150,50" zPosition="5" alphatest="blend">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">0,720</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/ico_hd_on.png" position="1360,188" size="150,50" zPosition="6" alphatest="blend">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">721,1980</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<!-- Videoformat icon (16:9?) -->
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/ico_format_off.png" position="1540,188" size="150,50" zPosition="5" alphatest="blend" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XCplugin-IP/img/ico_format_on.png" position="1540,188" size="150,50" zPosition="6" alphatest="blend">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<!-- Panel Video Resolution  -->
-		<widget source="session.CurrentService" render="Label" position="1570,208" size="200,50" font="Regular;32" halign="right" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="5" >
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel text="x" position="1780,208" size="25,50" font="Regular;32" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="5" />
-		<widget source="session.CurrentService" render="Label" position="1810,208" size="200,50" font="Regular;32" halign="left"  foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="5" >
-			<convert type="ServiceInfo">VideoHeight</convert>	
-		</widget>
-		<!-- BUTTONS -->
-		<eLabel  text="1: -10s" position="450,153"  size="150,34" halign="center" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-		<eLabel  text="4: -1m"  position="450,183"  size="148,34" halign="center" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-		<eLabel  text="7: -5m"  position="450,213"  size="150,34" halign="center" font="Regular;30" foregroundColor="#5483fe" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-		<eLabel  text="3: +10s" position="650,153"  size="150,34" halign="center" font="Regular;30" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-		<eLabel  text="6: +1m"  position="647,183"  size="150,34" halign="center" font="Regular;30" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="6" /> 		
-		<eLabel  text="9: +5m"  position="648,213"  size="150,34" halign="center" font="Regular;30" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="6" />
-		<widget name="state" position="840,185" size="300,60" font="Regular;54" halign="left" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" zPosition="10" />
-	</screen> 
-
-	<!-- QUALITY -->
-	<screen name ="SelectQuality" position="center,center" size="800,500" backgroundColor="#10000000" flags="wfNoBorder" title ="Episode selector" >
-		<widget name="menulabel" position="40,30" size="720,50" halign="center" font="Regular;30" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" zPosition="1" /> 
-		<widget name="filmparts" itemHeight="30" position="40,80" size="332,340" foregroundColor="#ffffff" backgroundColor="#10000000" transparent="1" /> 
-	</screen>	
-	
-	<!-- TASK -->
-	<screen name="xpluginTasksScreen" position="center,center" size="1600,800" title="Video Download List">
-		<widget source="movielist" render="Listbox" position="20,50" size="1560,700" zPosition="7" scrollbarMode="showOnDemand" transparent="1" >
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 1),       size = (880, 30), font=1, flags = RT_HALIGN_LEFT, text = 1),  # index 1 is the name
-						MultiContentEntryText(pos = (920, 1),      size = (200, 30), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-						MultiContentEntryProgress(pos = (1140, 1), size = (250, 30), percent = -3),                              # index 3 should be progress
-						MultiContentEntryText(pos = (1430, 1),     size = (160, 30), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
-					],
-				"fonts": [gFont("Regular", 26),gFont("Regular", 22)],
-				"itemHeight": 30
-				}
-			</convert>
-		</widget>
-	</screen>
-	
-	<screen name="SetupMenu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p800_Template" />
-		<panel name="p800_Logo" />
-		<panel name="p800_DateMid" />
-		<panel name="nRGYB" />
-                <widget name="memory" position="70,545" zPosition="2" size="830,40" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="white" />
-                <widget name="slide" position="70,600" zPosition="2" borderWidth="1" size="820,8" backgroundColor="dark" />
-		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
-                <widget name="config" position="70,180" size="830,420" font="Regular;28" itemHeight="45" zPosition="1" transparent="1" backgroundColor="#31000000" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="menu/startboot.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
-		<!-- eLabel name="DEBUG" text="EG30" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-</screen>
 	
 	<screen name="ClearMemInfoScreen" position="fill" title="ClearMem Info" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
