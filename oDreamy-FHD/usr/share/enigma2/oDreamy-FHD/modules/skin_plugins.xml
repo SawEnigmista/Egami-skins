@@ -4011,9 +4011,10 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
 		<widget source="total" render="Label" position="70,180" size="820,80"  zPosition="1" font="Regular; 30" halign="left" backgroundColor="layer-a-background" transparent="1" valign="center" />
-		<widget source="liste" render="Label" position="70,350" size="820,600" zPosition="1" transparent="1" noWrap="1" font="Regular; 30" valign="top" />
+		<widget name="ScrollLabel" position="70,350" size="820,600" zPosition="1" transparent="1" noWrap="1" font="Regular; 30" valign="top" />
 		<ePixmap position="960,640" size="256,256" pixmap="menu/mediacenter.png" alphatest="blend"/>
 		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<panel name="nRGYB"/>
 	</screen>
 
 	<!-- ********** Volume Control FHD ********** P074 -->
