@@ -812,8 +812,8 @@
 		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_listch.png" alphatest="blend"/>
 		<widget name="config" position="70,180" size="820,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
-		<widget name="status" position="1280,460" size="600,100" font="Regular;32" backgroundColor="bluette" transparent="1" />
-		<widget name="statusbar" position="1280,820" size="600,40" font="Regular;30" backgroundColor="bluette" transparent="1" />
+		<widget name="status" position="1280,460" size="600,100" font="Regular;32" halign="center" valign="center" backgroundColor="bluette" transparent="1" />
+		<widget name="statusbar" position="1280,820" size="600,100" font="Regular;30" halign="center" valign="center" backgroundColor="bluette" transparent="1" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
