@@ -69,7 +69,7 @@
 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
-		<widget name="menu" position="70,250" size="820,660" font="Regular;30" itemHeight="70" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="menu" position="70,250" size="820,660" font="Regular;30" itemHeight="73" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="EG05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>	
 
@@ -82,7 +82,7 @@
 		<ePixmap pixmap="menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
 		<ePixmap position="895,180" size="15,720" pixmap="box/maxbargh.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="menu" position="70,250" size="840,660" font="Regular;30" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<widget name="menu" position="70,250" size="840,660" font="Regular;30" itemHeight="73" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<!-- eLabel name="DEBUG" text="EG06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
