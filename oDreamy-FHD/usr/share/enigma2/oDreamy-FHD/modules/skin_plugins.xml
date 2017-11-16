@@ -4543,8 +4543,8 @@
 			<widget name="author" position="830,615" size="400,80" zPosition="2" font="Regular; 30" transparent="1" />
 			<widget name="genre_txt" position="700,725" size="150,40" font="Regular; 30" transparent="1" />
 			<widget name="genre" position="830,725" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
-			<widget name="studio_txt" position="700,795" size="150,80" font="Regular; 30" transparent="1" />
-			<widget name="studio" position="830,795" size="400,80" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="studio_txt" position="700,795" size="150,100" font="Regular; 30" transparent="1" />
+			<widget name="studio" position="830,795" size="400,100" zPosition="2" font="Regular; 30" transparent="1" />
 			<widget name="subtitle" position="0,0" size="0,0" zPosition="2" transparent="1" font="Regular;22" foregroundColor="#00fff000" />			
 			<widget name="description" position="0,0" size="0,0" zPosition="2" transparent="1" font="Regular;22" />
 		        <eLabel text="Exit" position="1400,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
