@@ -500,19 +500,7 @@
 		<eLabel position="0,658"   size="180,5"  backgroundColor="#202020" zPosition="-1" />
 		<eLabel position="180,660" size="1280,1" backgroundColor="#202020" zPosition="-1" />
 		<!-- ColorButtons -->
-		<ePixmap pixmap="buttons/redpanel.png"    position="40,674"  size="22,22" alphatest="blend"/>
-		<ePixmap pixmap="buttons/greenpanel.png"  position="240,674" size="22,22" alphatest="blend"/>
-		<ePixmap pixmap="buttons/yellowpanel.png" position="450,674"  size="22,22" alphatest="blend"/>
-		<ePixmap pixmap="buttons/bluepanel.png"   position="650,674" size="22,22" alphatest="blend"/>
-		<widget name="key_red"    position="70,673"  size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<widget name="key_green"  position="270,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<widget name="key_yellow" position="480,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<widget name="key_blue"   position="680,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<eLabel text="Record"     position="70,673"  size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Plugins"    position="270,673" size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Extensions" position="480,673" size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<eLabel text="Egami"      position="680,673" size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
-		<!-- Teletext icon (is teletext available?) -->
+	        <!-- Teletext icon (is teletext available?) -->
 		<ePixmap pixmap="eDreamy/icons/ico_txt_off.png" position="865,668" size="46,30" zPosition="1" alphatest="blend" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="eDreamy/icons/ico_txt_on.png" position="865,668" size="46,30" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
