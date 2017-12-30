@@ -812,8 +812,8 @@
 		<ePixmap position="960,640" size="256,256" pixmap="menu/ico_listch.png" alphatest="blend"/>
 		<widget name="config" position="70,180" size="820,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
-		<widget name="status" position="1280,460" size="600,100" font="Regular;32" backgroundColor="bluette" transparent="1" />
-		<widget name="statusbar" position="1280,820" size="600,40" font="Regular;30" backgroundColor="bluette" transparent="1" />
+		<widget name="status" position="1280,460" size="600,100" font="Regular;32" halign="center" valign="center" backgroundColor="bluette" transparent="1" />
+		<widget name="statusbar" position="1280,820" size="600,100" font="Regular;30" halign="center" valign="center" backgroundColor="bluette" transparent="1" />
 		<ePixmap position="1270,38" size="200,90" pixmap="icons/logosmall.png" alphatest="blend" zPosition="2" />
 	</screen>
 
@@ -4489,4 +4489,64 @@
                 <widget name="message_label" font="Regular; 30" position="0,0" zPosition="2" valign="center" halign="center" size="498,30" backgroundColor="#31000000" transparent="1" />
 </screen>
 	
+		<!-- tmdb FHD -->
+	
+<screen name="tmdbScreen" position="fill" title="TMDb - The Movie Database" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Ext"/>
+		<panel name="p800_Date" />
+		<panel name="nRGYB" />
+		<panel name="M" />
+	        <widget name="searchinfo" position="60,180" size="1100,40" font="Regular;32" transparent="1" foregroundColor="#00fff000"/>
+	        <widget name="list" position="60,240" size="1185,680" itemHeight="45" font="Regular;32" transparent="1" scrollbarMode="showOnDemand"/>
+	        <widget name="cover" position="1165,155" size="800,770" alphatest="blend"/>
+		<eLabel text="Exit" position="1400,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+   </screen>
+   
+   <screen name="tmdbScreenPeople" position="fill" title="TMDb - The Movie Database" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Ext"/>
+		<panel name="p800_Date" />
+		<panel name="nRGYB" />
+		<panel name="M" />
+	        <widget name="searchinfo" position="60,180" size="1100,40" font="Regular;32" transparent="1" foregroundColor="#00fff000"/>
+	        <widget name="list" position="60,240" size="1185,680" itemHeight="45" font="Regular;32" transparent="1" scrollbarMode="showOnDemand"/>
+	        <widget name="cover" position="1165,155" size="800,770" alphatest="blend"/>
+		<eLabel text="Exit" position="1400,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+   </screen>
+
+   <screen name="tmdbScreenMovie" position="fill" title="TMDb - The Movie Database" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Ext"/>
+		<panel name="p800_Date" />
+		<panel name="nRGYB" />
+		<panel name="M" />
+	                <widget name="searchinfo" position="60,180" size="600,40" font="Regular;32" transparent="1" foregroundColor="#00fff000" />
+	                <widget name="cover" position="1165,155" size="800,770" alphatest="blend" />
+		        <widget name="fulldescription" position="60,220" size="600,680" font="Regular;32" transparent="1" />
+			<ePixmap position="775,150" size="100,100" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/star.png" transparent="1" alphatest="blend" />
+			<widget name="rating" position="750,185" size="150,40" zPosition="2" font="Regular; 30" halign="center" foregroundColor="black" backgroundColor="#00ffba00" transparent="1" />
+			<widget name="votes_brackets" position="745,255" size="150,40" zPosition="2" font="Regular; 30" halign="center" transparent="1" />
+			<widget name="fsk" position="0,0" size="0,0" zPosition="2" font="Regular;22" halign="center" transparent="1" />
+			<widget name="fsklogo" position="996,149" size="100,100" zPosition="2" alphatest="blend" />
+			<widget name="year_txt" position="700,355" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="year" position="830,355" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="country_txt" position="700,405" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="country" position="830,405" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="runtime_txt" position="700,455" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="runtime" position="830,455" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="votes_txt" position="700,510" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="votes" position="830,510" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="director_txt" position="700,560" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="director" position="830,560" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="author_txt" position="700,615" size="400,80" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="author" position="830,615" size="400,80" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="genre_txt" position="700,725" size="150,40" font="Regular; 30" transparent="1" />
+			<widget name="genre" position="830,725" size="400,40" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="studio_txt" position="700,795" size="150,100" font="Regular; 30" transparent="1" />
+			<widget name="studio" position="830,795" size="400,100" zPosition="2" font="Regular; 30" transparent="1" />
+			<widget name="subtitle" position="0,0" size="0,0" zPosition="2" transparent="1" font="Regular;22" foregroundColor="#00fff000" />			
+			<widget name="description" position="0,0" size="0,0" zPosition="2" transparent="1" font="Regular;22" />
+		        <eLabel text="Exit" position="1400,975" size="200,95" font="Regular;30" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+   </screen>
 </skin>

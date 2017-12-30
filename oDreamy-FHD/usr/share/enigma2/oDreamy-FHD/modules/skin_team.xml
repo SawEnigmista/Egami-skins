@@ -69,7 +69,7 @@
 		<eLabel text="Exit" position="1390,940" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
-		<widget name="menu" position="70,250" size="820,660" font="Regular;30" itemHeight="70" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="menu" position="70,250" size="820,660" font="Regular;30" itemHeight="73" scrollbarMode="showOnDemand" transparent="1"/>
 		<!-- eLabel name="DEBUG" text="EG05" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>	
 
@@ -82,7 +82,7 @@
 		<ePixmap pixmap="menu/camcenter.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 		<widget name="status" position="70,180" size="820,40" font="Regular;35" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" />      
 		<ePixmap position="895,180" size="15,720" pixmap="box/maxbargh.png" alphatest="blend" transparent="1" zPosition="4" />
-		<widget name="menu" position="70,250" size="840,660" font="Regular;30" itemHeight="72" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
+		<widget name="menu" position="70,250" size="840,660" font="Regular;30" itemHeight="73" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<!-- eLabel name="DEBUG" text="EG06" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -760,12 +760,13 @@
 		<widget name="cover" position="68,178" size="1160,720" alphatest="blend" backgroundColor="transparent" zPosition="2" /> 
 	</screen>
 	
-			<!--  EGAMI Plugin List -->
+  <!--  EGAMI Plugin List -->
 		
 	<screen name="ChannelListUpdateMenu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder" >
 		<panel name="p800_Template" />
 		<panel name="p800_Logo" />
 		<panel name="p800_DateMid" />
+	        <panel name="sR" />
 		<ePixmap position="900,180" size="10,720" pixmap="box/maxbar.png" alphatest="blend" transparent="1" zPosition="4" />
 		<widget source="list" render="Listbox" position="70,180" size="840,720" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#10000000" zPosition="3">
 			  <convert type="TemplatedMultiContent">
@@ -775,11 +776,11 @@
 			      MultiContentEntryPixmapAlphaTest(pos = (2, 5), size = (150, 60), png = 1, flags = BT_SCALE),
 			      ],
 			      "fonts": [gFont("Regular", 32),gFont("Regular", 23)],
-			      "itemHeight": 80
+			      "itemHeight": 70
 			      }
 			  </convert>
 		</widget>
-		<widget name="info" position="70,830" size="840,234" font="Regular; 30" halign="center" transparent="1" backgroundColor="#10000000" foregroundColor="blue" />
+		<widget name="info" position="70,710" size="840,234" font="Regular; 30" halign="center" transparent="1" backgroundColor="#10000000" foregroundColor="blue" />
 		<eLabel text="Rango Polskie Listy Kanalow" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<ePixmap pixmap="menu/ico_listch.png" position="950,645" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
@@ -1189,6 +1190,19 @@
 		<widget name="canceltext" position="110,990" zPosition="1" size="115,24" font="Regular;30" halign="center" valign="center" transparent="1"/>
 		<widget name="oktext" position="380,990" zPosition="1" size="115,24" font="Regular;30" halign="center" valign="center" transparent="1"/>
 	</screen>
+	
+	
+			<!--  SetupMenu -->
+
+       <screen name="SetupMenu" position="fill" title="" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template" />
+		<panel name="p800_Logo" />
+		<panel name="p800_DateMid" />
+		<panel name="nRGYB"/>
+                <widget name="memory" position="70,545" zPosition="2" size="820,40" valign="center" halign="left" font="Regular;30" transparent="1" foregroundColor="white" />
+                <widget name="slide" position="70,600" zPosition="2" borderWidth="1" foregroundColor="red" size="820,8" backgroundColor="blue" />
+                <widget name="config" position="70,180" size="820,420" font="Regular;28" itemHeight="45" zPosition="1" transparent="1" backgroundColor="#31000000" scrollbarMode="showOnDemand" />
+      </screen>
 	
 	<!-- ########## END EGAMI TEAM PANELS ########## -->
 
@@ -2002,28 +2016,6 @@
 		<widget name="config" position="70,180" size="820,600" itemHeight="40" font="Regular; 30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
 		<ePixmap position="955,640" size="300,300" pixmap="menu/missing.png" alphatest="blend"/>
 		<!-- eLabel name="DEBUG" text="OM03" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-
-	<screen name="FlashOnline" position="fill" title="Flash Online" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="p800_Template"/>
-		<panel name="p800_Logo"/>
-		<panel name="p800_DateMid"/>
-		<panel name="nRGY"/>
-		<widget name="info-online" position="615,87" zPosition="1" size="534,233" font="Regular; 22" halign="left" valign="top" backgroundColor="header" transparent="1"/>
-		<widget name="info-local" position="615,348" zPosition="1" size="534,300" font="Regular; 22" halign="left" valign="top" backgroundColor="header" transparent="1"/>
-		<ePixmap position="955,640" size="300,300" pixmap="menu/ico_team.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="OM04" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
-	</screen>
-
-	<screen name="doFlashImage" position="fill" title="Flash Image" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="p800_Template"/>
-		<panel name="p800_Logo"/>
-		<panel name="p800_DateMid"/>
-		<panel name="nRGYB"/>
-		<eLabel text="Flash On the fly (select a image)" position="70,180" size="820,50" font="Regular;32" transparent="0" zPosition="0" backgroundColor="header"/>
-		<widget name="imageList" position="70,260" zPosition="1" size="820,600" font="Regular;28" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap position="955,640" size="300,300" pixmap="menu/ico_team.png" alphatest="blend"/>
-		<!-- eLabel name="DEBUG" text="OM05" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<screen name="CommitInfo" position="fill" title="Commit Info" flags="wfNoBorder" backgroundColor="transparent">

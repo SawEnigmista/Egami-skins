@@ -1030,6 +1030,9 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- List Channel --> 
+		<widget source="ServiceEvent" render="Label" position="430,90" size="720,30" foregroundColor="white" font="Regular;26" valign="center" halign="right" transparent="1" zPosition="1">
+                        <convert type="TransponderInfo">NoRoot</convert>
+                </widget>
 		<ePixmap position="1230,165" size="10,750" pixmap="oDreamy-FHD/box/maxbar.png" alphatest="blend" zPosition="2"/>
 		<widget name="list" position="70,165" size="1170,750" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
 			serviceItemHeight="50" serviceNumberFont="Regular;32" serviceNameFont="Regular;30" serviceInfoFont="Regular;30" 
@@ -3034,7 +3037,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="nRGY"/>
+		<panel name="sRGYB"/>
 		<widget name="info-local"  position="70,180" zPosition="1" size="820,120" font="Regular;32" halign="left" valign="top" foregroundColor="ltbluette" backgroundColor="header" transparent="1" />
 		<widget name="info-flash"  position="70,360" zPosition="1" size="820,300" font="Regular;32" halign="left" valign="top" foregroundColor="white"     backgroundColor="header" transparent="1" />
 		<widget name="info-online" position="70,700" zPosition="1" size="820,100" font="Regular;32" halign="left" valign="top" foregroundColor="yellow"    backgroundColor="header" transparent="1" />
@@ -3047,7 +3050,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Logo"/>
 		<panel name="p800_DateMid"/>
-		<panel name="nRGY"/>
+		<panel name="sRGYB"/>
 		<widget name="imageList" position="70,180" size="820,720" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,640" size="356,256" pixmap="menu/memory.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S220" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
