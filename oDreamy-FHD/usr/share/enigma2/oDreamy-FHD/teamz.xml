@@ -29,5 +29,5 @@
 
 	<ruleset name="Plugins">	
 		<rule type="marker"  Name="openhdf"          Red="Exit"       Green="Download"   Yellow="Sort"       Blue="" >            </rule>	
-	</ruleset>				
+	</ruleset>
 </rules>

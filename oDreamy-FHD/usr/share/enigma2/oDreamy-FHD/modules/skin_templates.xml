@@ -15,15 +15,15 @@
 
 	<!-- Menu Template FHD -->
 	<screen name="MenuTemplate" >
-		<panel name="p700_Template" />
+		<panel name="p700_Template_black" />
 		<panel name="p700_Date" />
-		<panel name="menu_sort" />
+		<panel name="menu_sort_bl" />
 		<!-- menu list -->
-		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png"    alphatest="blend" zPosition="1" />
+		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png" alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
 		<widget source="menu" render="Listbox" position="45,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
-			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+			selectionPixmap="box/slider72.png" backgroundPixmap="box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
  				{"template": [ MultiContentEntryText(pos = (100, 10), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0),
  				MultiContentEntryPixmapAlphaBlend(pos=(20,2),size=(56,56),png=5,)],
@@ -32,10 +32,18 @@
  				}
  			</convert>
  		</widget>
-		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
-		<!--ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" /-->
 	</screen> 
 	
+	<!-- Button Templates Menu Sort -->
+	<screen name="menu_sort_bl">
+		<ePixmap position="70,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="blue" position="110,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="370,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="green"  position="410,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="670,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="yellow" position="710,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
 	<!-- Button Templates Menu Sort -->
 	<screen name="menu_sort">
 		<widget name="green"  position="530,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
@@ -52,9 +60,10 @@
 		<eLabel position="50,30"    size="1100,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1096,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="70,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,50" size="52,70" pixmap="icons/list.png" alphatest="blend" zPosition="2" />
+		<widget source="Title" render="DRRunningText" options="movetype=swimming,direction=left,startpoint=0,startdelay=5000,steptime=40,wrap=1,always=0,repeat=6,oneshot=1"
+			position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
 		<eLabel position="50,140"   size="1100,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142"   size="1096,796" backgroundColor="#20000000" zPosition="-1" />
@@ -63,6 +72,26 @@
 		<!-- Footer -->
 		<eLabel position="50,955"   size="1100,95"  backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,957"   size="1098,93"  backgroundColor="trbluette" zPosition="-1" />
+	</screen>
+
+	<!-- P700 Template FHD -->
+	<screen name="p700_Template_black" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 700p Upper Panel -->
+		<eLabel position="50,30"    size="1100,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1096,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
+			position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1100,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1096,796" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,137"   size="770,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="810,934"  size="340,10"   backgroundColor="bluette"   zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1100,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1098,93"  backgroundColor="#10000000" zPosition="-1" />
 	</screen>
 
 	<!-- P700 Logo FHD -->
@@ -74,10 +103,11 @@
 
 	<!-- P700 Date FHD -->
 	<screen name="p700_Date" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
-		<!-- Date -->
-		<widget source="global.CurrentTime" render="Label" position="730,30" size="400,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+		<!-- Date 
+		<widget source="global.CurrentTime" render="Label" position="830,30" size="300,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %d %B </convert>
 		</widget>
+		-->
 	</screen>
 
 	<!-- P800 Template FHD -->
@@ -86,9 +116,10 @@
 		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
+		        position="150,30" size="1000,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
 		<eLabel position="50,140"   size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142"   size="1196,795" backgroundColor="#20000000" zPosition="-1" />
@@ -118,7 +149,7 @@
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
 	</screen>
-	
+
 	<!-- P1800 Template FHD -->
 	<screen name="p1800_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<!-- Footer -->
@@ -153,9 +184,10 @@
 		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
+			position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
 		<eLabel position="50,140"   size="1820,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142"   size="1815,795" backgroundColor="#20000000" zPosition="-1" />
@@ -192,9 +224,10 @@
 		<eLabel position="50,30"  size="1200,96"  backgroundColor="#201b3c85" zPosition="-2" />
 		<eLabel position="52,32"  size="1196,91"  backgroundColor="#20000000" zPosition="-2" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;34" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
+			position="150,30" size="900,95" font="Regular;34" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
 		<eLabel position="50,136"   size="860,10"   backgroundColor="bluette"   zPosition="0"  />
 		<eLabel position="50,140"   size="1202,800" backgroundColor="#20000000" zPosition="-1" />
@@ -298,9 +331,10 @@
 		<eLabel position="50,30"    size="1820,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1816,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
-		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;45" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
+			position="150,30" size="900,95" font="Regular;45" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
 		<eLabel position="50,140"   size="1820,800" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,142"   size="1816,795" backgroundColor="#20000000" zPosition="-1" />
@@ -502,6 +536,30 @@
 		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="blue" render="Label" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<screen name="MI">
 		<!-- Keys Buttons DRE -->
