@@ -19,8 +19,8 @@
 		<panel name="p700_Date" />
 		<panel name="menu_sort_bl" />
 		<!-- menu list -->
-		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png" alphatest="blend" zPosition="1" />
-		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
+		<ePixmap position="830,160" size="400,700" pixmap="oDreamy-FHD/menu/teamlogo.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="oDreamy-FHD/box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
 		<widget source="menu" render="Listbox" position="45,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
 			selectionPixmap="box/slider72.png" backgroundPixmap="box/sliderb.png" >
@@ -36,22 +36,22 @@
 	
 	<!-- Button Templates Menu Sort -->
 	<screen name="menu_sort_bl">
-		<ePixmap position="70,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="blue" position="110,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-		<ePixmap position="370,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="370,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="green"  position="410,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-		<ePixmap position="670,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="670,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="yellow" position="710,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<!-- Button Templates Menu Sort -->
 	<screen name="menu_sort">
 		<widget name="green"  position="530,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-		<ePixmap position="490,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="490,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="yellow" position="800,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-		<ePixmap position="760,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="760,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
-		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- P700 Template FHD -->
@@ -60,8 +60,8 @@
 		<eLabel position="50,30"    size="1100,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1096,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="70,50" size="52,70" pixmap="icons/list.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png" alphatest="blend" zPosition="2" />
 		<widget source="Title" render="DRRunningText" options="movetype=swimming,direction=left,startpoint=0,startdelay=5000,steptime=40,wrap=1,always=0,repeat=6,oneshot=1"
 			position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
@@ -80,8 +80,8 @@
 		<eLabel position="50,30"    size="1100,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1096,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="70,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png"      alphatest="blend" zPosition="2" />
 		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
 			position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
@@ -97,7 +97,7 @@
 	<!-- P700 Logo FHD -->
 	<screen name="p700_Logo" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<!-- Logo -->
-		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png"    alphatest="blend" zPosition="1" />
+		<ePixmap position="830,160" size="400,700" pixmap="oDreamy-FHD/menu/teamlogo.png"    alphatest="blend" zPosition="1" />
 		<eLabel  position="810,180"  size="10,720" backgroundColor="#301b3c85" zPosition="2" />
 	</screen>
 
@@ -116,8 +116,8 @@
 		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png"      alphatest="blend" zPosition="2" />
 		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
 		        position="150,30" size="1000,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
@@ -143,8 +143,8 @@
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
-		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,975" size="90,60"   pixmap="oDreamy-FHD/icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="oDreamy-FHD/icons/clock50.png"   alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
@@ -170,8 +170,8 @@
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
-		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,975" size="90,60"   pixmap="oDreamy-FHD/icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="oDreamy-FHD/icons/clock50.png"   alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
@@ -184,8 +184,8 @@
 		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png"      alphatest="blend" zPosition="2" />
 		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
 			position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
@@ -211,8 +211,8 @@
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
-		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,975" size="90,60"   pixmap="oDreamy-FHD/icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="oDreamy-FHD/icons/clock50.png"   alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
@@ -224,8 +224,8 @@
 		<eLabel position="50,30"  size="1200,96"  backgroundColor="#201b3c85" zPosition="-2" />
 		<eLabel position="52,32"  size="1196,91"  backgroundColor="#20000000" zPosition="-2" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png"      alphatest="blend" zPosition="2" />
 		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
 			position="150,30" size="900,95" font="Regular;34" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
@@ -251,8 +251,8 @@
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
-		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,975" size="90,60"   pixmap="oDreamy-FHD/icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="oDreamy-FHD/icons/clock50.png"   alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
@@ -292,20 +292,20 @@
 	<!-- P800 Logo FHD -->
 	<screen name="p800_Logo" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<!-- Logo -->
-		<ePixmap position="930,160" size="400,700" pixmap="menu/teamlogo.png"  alphatest="blend" zPosition="1" />
-		<ePixmap position="895,180" size="15,720"  pixmap="buttons/barlogofull.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="930,160" size="400,700" pixmap="oDreamy-FHD/menu/teamlogo.png"  alphatest="blend" zPosition="1" />
+		<ePixmap position="895,180" size="15,720"  pixmap="oDreamy-FHD/buttons/barlogofull.png" alphatest="blend" zPosition="2" />
 	</screen>
 
 	<!-- P800 Logo FHD -->
 	<screen name="p800_Logo_Nobar" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<!-- Logo -->
-		<ePixmap position="930,160" size="400,700" pixmap="menu/teamlogo.png"  alphatest="blend" zPosition="1" />
+		<ePixmap position="930,160" size="400,700" pixmap="oDreamy-FHD/menu/teamlogo.png"  alphatest="blend" zPosition="1" />
 	</screen>
 
 	<!-- P800 LogoSeparator FHD -->
 	<screen name="p800_LogoSep" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<eLabel  position="1260,140" size="610,330" backgroundColor="#20000000" zPosition="2"/>
-		<ePixmap position="1440,175" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" zPosition="5" />
+		<ePixmap position="1440,175" size="256,256" pixmap="oDreamy-FHD/menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" zPosition="5" />
 		<eLabel  position="1260,470" size="620,10"  backgroundColor="#FF000000" zPosition="2"/>
 	</screen>
 
@@ -331,8 +331,8 @@
 		<eLabel position="50,30"    size="1820,96" backgroundColor="#201b3c85" zPosition="-1" />
 		<eLabel position="52,32"    size="1816,91" backgroundColor="#20000000" zPosition="-1" />
 		<!-- Code -->
-		<ePixmap position="48,28" size="52,52" pixmap="box/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<ePixmap position="48,28" size="52,52" pixmap="oDreamy-FHD/box/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="oDreamy-FHD/icons/list.png"      alphatest="blend" zPosition="2" />
 		<widget source="Title" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1"
 			position="150,30" size="900,95" font="Regular;45" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
 		<!-- Middle -->
@@ -356,8 +356,8 @@
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
-		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
-		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<ePixmap position="1275,975" size="90,60"   pixmap="oDreamy-FHD/icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="oDreamy-FHD/icons/clock50.png"   alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>				
@@ -375,42 +375,42 @@
 
 	<screen name="nR">
 		<!-- Keys Buttons FHD -->
-		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_red" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 	
 	<screen name="nRG">
 		<!-- Keys Buttons FHD -->
 		<panel name="nR" />
-		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_green"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 		
 	<screen name="nRGY">
 		<!-- Keys Buttons FHD -->
 		<panel name="nRG" />
-		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_yellow" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="nRGYB">
 		<!-- Keys Buttons FHD -->
 		<panel name="nRGY" />
-		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="nRB">
 		<!-- Keys Buttons FHD -->
 		<panel name="nR" />
-		<ePixmap position="360,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_blue"  position="390,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="nRGB">
 		<!-- Keys Buttons FHD -->
 		<panel name="nRG" />
-		<ePixmap position="640,988" pixmap="buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="key_blue" position="680,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 	
@@ -418,93 +418,93 @@
 
 	<screen name="nkR">
 		<!-- Keys Buttons FHD -->
-		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="red" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 	
 	<screen name="nkRG">
 		<!-- Keys Buttons FHD -->
 		<panel name="nkR" />
-		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="green"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="nkRGY">
 		<!-- Keys Buttons FHD -->
 		<panel name="nkRG" />
-		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="yellow" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="nkRGYB">
 		<!-- Keys Buttons FHD -->
 		<panel name="nkRGY" />
-		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="nkRB">
 		<!-- Keys Buttons DRE -->
 		<panel name="nkR" />
-		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget name="blue"  position="400,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 		
 	<!-- Button Templates Colors Source DRE -->
 
 	<screen name="sR">
-		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_red" render="Label" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="sRG">
 		<panel name="sR"/>
-		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_green" render="Label" position="400,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="sRGY">
 		<panel name="sRG"/>
-		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_yellow" render="Label" position="680,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 	
 	<screen name="sRGYB">
 		<panel name="sRGY"/>
-		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_blue" render="Label" position="950,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 	
 	<screen name="sRGB">
 		<panel name="sRG"/>
-		<ePixmap position="640,988" pixmap="buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_blue" render="Label" position="680,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 	
 	<screen name="sRB">
 		<panel name="sR"/>
-		<ePixmap position="360,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_blue" render="Label" position="400,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="sRY">
 		<panel name="sR"/>
-		<ePixmap position="360,988" pixmap="buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_yellow" render="Label" position="400,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="sRYB">
 		<panel name="sRY"/>
-		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_yellow" render="Label" position="680,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_blue" render="Label" position="950,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 
 	<screen name="sYB">
-		<ePixmap position="70,988"  pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_yellow" render="Label" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="360,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_blue" render="Label" position="400,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 
@@ -512,54 +512,30 @@
 
 	<screen name="skR">
 		<!-- Keys Buttons FHD -->
-		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="red" render="Label" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 	
 	<screen name="skRG">
 		<!-- Keys Buttons FHD -->
 		<panel name="skR" />
-		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="360,988" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="green" render="Label" position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="skRGY">
 		<!-- Keys Buttons FHD -->
 		<panel name="skRG" />
-		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="640,988" pixmap="oDreamy-FHD/buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="yellow" render="Label" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
 
 	<screen name="skRGYB">
 		<!-- Keys Buttons FHD -->
 		<panel name="skRGY" />
-		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="910,988" pixmap="oDreamy-FHD/buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="blue" render="Label" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
 	</screen>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<screen name="MI">
 		<!-- Keys Buttons DRE -->
@@ -578,7 +554,7 @@
 	</screen>
 
 	<screen name="fakeExit">
-		<ePixmap position="70,988"  pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,988"  pixmap="oDreamy-FHD/buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
 		<eLabel text="Exit" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 	</screen>
 

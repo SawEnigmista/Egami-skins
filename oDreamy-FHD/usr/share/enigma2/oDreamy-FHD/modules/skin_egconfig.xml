@@ -212,8 +212,8 @@
 		<widget source="session.CurrentService" render="ChannelNumber" position="300,468" size="120,60" font="Regular;50" halign="left" foregroundColor="#ffff40" backgroundColor="header" transparent="1" zPosition="3" />
 		
 		<!-- ***** Crypt ***** -->
-		<ePixmap pixmap="icons/ico_crypt_off_bar.png" position="300,530" size="70,35" alphatest="blend" zPosition="3" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_crypt_on_bar.png" position="300,530" size="70,35" alphatest="blend" zPosition="4">
+		<ePixmap pixmap="oDreamy-FHD/icons/ico_crypt_off_bar.png" position="300,530" size="70,35" alphatest="blend" zPosition="3" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_crypt_on_bar.png" position="300,530" size="70,35" alphatest="blend" zPosition="4">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -236,8 +236,8 @@
   		</widget>
 
 		<!-- HbbTV icon (is HbbTV active?)-->	
-		<ePixmap pixmap="icons/hbbtv_off.png" position="280,615" size="145,50" zPosition="1" alphatest="blend" scale="1" />
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hbbtv_on.png" position="280,615" size="145,50" zPosition="2" alphatest="blend" scale="1" >
+		<ePixmap pixmap="oDreamy-FHD/icons/hbbtv_off.png" position="280,615" size="145,50" zPosition="1" alphatest="blend" scale="1" />
+		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/hbbtv_on.png" position="280,615" size="145,50" zPosition="2" alphatest="blend" scale="1" >
 		        <convert type="ServiceInfo">HasHBBTV</convert>
 		        <convert type="ConditionalShowHide" />
 		</widget>		
@@ -256,7 +256,7 @@
   			<convert type="ConditionalShowHide" />
   		</widget>
   		<!-- Audio icon (is there multichannel audio?) -->
-		<ePixmap position="280,680" size="145,50" pixmap="icons/ico_dolby_off.png" alphatest="blend" zPosition="1" />
+		<ePixmap position="280,680" size="145,50" pixmap="oDreamy-FHD/icons/ico_dolby_off.png" alphatest="blend" zPosition="1" />
   		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/ico_dolby_on.png" position="280,680" size="145,50" zPosition="2" alphatest="blend">
   			<convert type="ServiceInfo">IsStereo</convert>
   			<convert type="ConditionalShowHide" />
@@ -297,7 +297,7 @@
 
 		<!-- ***** Infobar ***** --> 
 		<!-- Blinking pixmap (recording in progress) -->
-		<ePixmap pixmap="icons/icon_event.png" position="55,937" size="44,35" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="oDreamy-FHD/icons/icon_event.png" position="55,937" size="44,35" zPosition="1" alphatest="blend" />
 		<widget source="session.RecordState" render="Pixmap" position="55,937" size="44,35" pixmap="oDreamy-FHD/icons/icon_event_rec.png" alphatest="blend" zPosition="2" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
@@ -831,7 +831,7 @@
 		<widget source="session.CurrentService" render="Label" position="1660,945" size="200,50" font="Regular;40" halign="right" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="3">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget name="PTSSeekPointer" position="400,951" size="15,13" pixmap="icons/pointer.png" alphatest="blend" zPosition="7" />
+		<widget name="PTSSeekPointer" position="400,951" size="15,13" pixmap="oDreamy-FHD/icons/pointer.png" alphatest="blend" zPosition="7" />
 		<widget name="PTSSeekBack"    position="400,951" size="1310,0" pixmap="slider_back.png" alphatest="on" zPosition="2" />
 		<eLabel position="400,969" size="1310,3" backgroundColor="bluette" zPosition="5" />
 		<widget source="session.CurrentService" render="Progress" position="400,967" size="1310,9" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="6">
