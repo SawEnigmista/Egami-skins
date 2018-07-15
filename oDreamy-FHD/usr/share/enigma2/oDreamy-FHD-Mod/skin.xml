@@ -840,11 +840,11 @@
     <convert type="ConditionalShowHide" />
   </widget>
   <!-- Audio icon (is there multichannel audio?) -->
-    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_dolbys_on.png" position="1730,1000" size="145,50" zPosition="2" alphatest="blend">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_dolby_on.png" position="1730,1000" size="145,50" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsStereo</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_dolby_on.png" position="1730,1000" size="145,50" zPosition="2" alphatest="blend">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_dolby_d.png" position="1730,1000" size="145,50" zPosition="2" alphatest="blend">
     <convert type="ServiceInfo">IsMultichannel</convert>
     <convert type="ConditionalShowHide" />
   </widget>
