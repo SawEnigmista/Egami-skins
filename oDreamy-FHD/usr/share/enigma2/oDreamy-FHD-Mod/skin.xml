@@ -867,7 +867,7 @@
 	  </widget>
 	  <!-- ***** CenterUp Meteo Panel ***** -->
 	<widget render="MSNWeatherPixmap" source="session.MSNWeather" position="1673,808" size="70,70" zPosition="2" alphatest="blend">
-	  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/,png</convert>
+	  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/msnflat/,png</convert>
 	</widget>
 	  <ePixmap position="1742,818" size="50,50" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/temp.png" alphatest="blend" zPosition="1" />
 	  <widget source="session.MSNWeather" render="Label" position="1794,821" size="110,50" font="Regular; 34" halign="left" foregroundColor="orange" backgroundColor="header" transparent="1" zPosition="2">
