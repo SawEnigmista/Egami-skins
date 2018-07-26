@@ -3404,8 +3404,8 @@
 	<!-- **********  MSN Weather ********** 52 FHD -->
 
 	<screen name="MSNWeatherPlugin" position="fill" title="Weather Plugin" backgroundColor="transparent" flags="wfNoBorder" >
-		<ePixmap pixmap="icons/msn/msnback.png"          position="0,0"     size="1920,1080" alphatest="1" transparent="1" zPosition="-1" />
-		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="350,60"  size="28,120"    alphatest="blend" transparent="1" zPosition="3"  />
+		<ePixmap pixmap="msn/msnback.png"          position="0,0"     size="1920,1080" alphatest="1" transparent="1" zPosition="-1" />
+		<ePixmap pixmap="msn/temp_high_low.png"    position="350,60"  size="28,120"    alphatest="blend" transparent="1" zPosition="3"  />
 		<widget source="currentTemp"   render="Label"    position="400,55"  size="250,120"   font="Regular;70" foregroundColor="yellow"  backgroundColor="header" transparent="1" zPosition="3" />
 		<widget source="feelsliketemp" render="Label"    position="350,150" size="300,120"   font="Regular;34" foregroundColor="white"   backgroundColor="header" transparent="1" zPosition="3" />
 		<widget source="weekday1_temp" render="Label"    position="350,230" size="300,100"    font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
@@ -3420,9 +3420,9 @@
 		<eLabel position="750,260" size="830,2" backgroundColor="#404040" zPosition="1"/>
 		<!-- Week 1 Data Ext-->
 		<widget source="condition" render="Label"        position="840,280"  size="500,120" font="Regular;38" halign="left" foregroundColor="yellow"  backgroundColor="header" transparent="1" zPosition="3" />
-		<ePixmap pixmap="icons/msn/wind.png"             position="760,350"  size="60,60"   alphatest="blend" transparent="1" zPosition="3" />
+		<ePixmap pixmap="msn/wind.png"             position="760,350"  size="60,60"   alphatest="blend" transparent="1" zPosition="3" />
 		<widget render="Label" source="wind_condition"   position="840,360"  size="700,40"  font="Regular;36" backgroundColor="header" transparent="1" zPosition="3" />
-		<ePixmap pixmap="icons/msn/umbrella.png"         position="760,435"  size="50,54"   alphatest="blend" transparent="1" zPosition="3" />
+		<ePixmap pixmap="msn/umbrella.png"         position="760,435"  size="50,54"   alphatest="blend" transparent="1" zPosition="3" />
 		<widget render="Label" source="humidity"         position="840,440"  size="700,40"  font="Regular;36" backgroundColor="header" transparent="1" zPosition="3" />
 		<widget name="currenticon" position="1340,300" size="240,200" zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy/msn2/,png</convert>
@@ -3434,7 +3434,7 @@
 <widget source="session.MSNWeather" render="Label" font="Regular; 34" position="170,610" size="260,60" backgroundColor="black" zPosition="3" transparent="1" halign="center" valign="center">
       <convert type="MSNWeather">date,day2</convert>
     </widget>
-		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="130,690" size="28,120"   alphatest="blend" transparent="1" zPosition="3"  />
+		<ePixmap pixmap="msn/temp_high_low.png"    position="130,690" size="28,120"   alphatest="blend" transparent="1" zPosition="3"  />
 		<widget render="Label" source="weekday2_temp"    position="165,690" size="280,120"  font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="weekday2_icon" position="180,820" size="240,200" zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/oDreamy/msn2/,png</convert>
@@ -3446,7 +3446,7 @@
 <widget source="session.MSNWeather" render="Label" font="Regular; 34" position="610,610" size="260,60" backgroundColor="black" zPosition="3" transparent="1" halign="center" valign="center">
       <convert type="MSNWeather">date,day3</convert>
     </widget>		
-		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="575,690" size="28,120"   alphatest="blend" transparent="1" zPosition="3"  />
+		<ePixmap pixmap="msn/temp_high_low.png"    position="575,690" size="28,120"   alphatest="blend" transparent="1" zPosition="3"  />
 		<widget render="Label" source="weekday3_temp"    position="610,690" size="280,120"  font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="weekday3_icon" position="620,820" size="240,200" zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/oDreamy/msn2/,png</convert>
@@ -3458,7 +3458,7 @@
 <widget source="session.MSNWeather" render="Label" font="Regular; 34" position="1050,610" size="260,60" backgroundColor="black" zPosition="3" transparent="1" halign="center" valign="center">
       <convert type="MSNWeather">date,day4</convert>
     </widget>
-		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="1020,690" size="28,120"  alphatest="blend" transparent="1" zPosition="3"  />
+		<ePixmap pixmap="msn/temp_high_low.png"    position="1020,690" size="28,120"  alphatest="blend" transparent="1" zPosition="3"  />
 		<widget render="Label" source="weekday4_temp"    position="1055,690" size="280,120" font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="weekday4_icon" position="1070,820" size="240,200" zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/oDreamy/msn2/,png</convert>
@@ -3470,7 +3470,7 @@
 <widget source="session.MSNWeather" render="Label" font="Regular; 34" position="1500,610" size="260,60" backgroundColor="black" zPosition="3" transparent="1" halign="center" valign="center">
       <convert type="MSNWeather">date,day5</convert>
     </widget>
-		<ePixmap pixmap="icons/msn/temp_high_low.png"    position="1465,690" size="28,120"  alphatest="blend" transparent="1" zPosition="3"  />
+		<ePixmap pixmap="msn/temp_high_low.png"    position="1465,690" size="28,120"  alphatest="blend" transparent="1" zPosition="3"  />
 		<widget render="Label" source="weekday5_temp"    position="1500,690" size="280,120" font="Regular;32" halign="center" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="weekday5_icon" position="1510,820" size="240,200" zPosition="1" transparent="1" alphatest="blend">
       <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/oDreamy/msn2/,png</convert>
