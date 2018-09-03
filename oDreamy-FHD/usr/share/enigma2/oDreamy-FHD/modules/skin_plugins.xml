@@ -3086,7 +3086,7 @@
 
 	<!-- ********** IPTV Player ********** P043 FHD -->
 
-	<screen name="IPTVPlayerWidget" position="fill" title="IPTV Player" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="E2iPlayerWidget" position="fill" title="IPTV Player" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p800_Template" />
 		<panel name="p800_Logo"/>
 		<panel name="p800_Date" />
