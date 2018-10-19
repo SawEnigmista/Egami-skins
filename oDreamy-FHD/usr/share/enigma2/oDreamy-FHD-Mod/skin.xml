@@ -940,9 +940,6 @@
 	  <eLabel position="810,148" size="500,5" backgroundColor="bluette" zPosition="-1" />
 	  <eLabel position="660,150" size="650,1" backgroundColor="bluette" zPosition="-1" />
 	<ePixmap position="670,55" size="120,75" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/smartcard1.png" alphatest="blend" zPosition="1" />
-	<widget render="MSNWeatherPixmap" source="session.MSNWeather" position="675,30" size="120,120" zPosition="2" alphatest="blend">
-	  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/msnflat/,png</convert>
-	</widget>
 	  <widget source="session.MSNWeather" render="Label" position="1748,873" size="171,65" font="Regular; 26" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="2" valign="center">
 	    <convert type="MSNWeather">city</convert>
 	  </widget>
