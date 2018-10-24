@@ -964,8 +964,8 @@
 	  <widget source="session.CurrentService" render="Label" position="800,40" size="95,30" font="Regular; 26" halign="center" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="2" noWrap="1">
             <convert type="EGNetSpeedInfo">NET_TYP</convert>
 	  </widget>
-	  <widget source="session.CurrentService" render="Label" position="840,40" size="246,56" font="Regular;27" halign="center" foregroundColor="red" backgroundColor="header" transparent="1">
-            <convert type="EGNetSpeedInfo">RC_MB</convert>
+	  <widget source="session.CurrentService" render="Label" position="840,40" size="336,56" font="Regular;27" halign="center" foregroundColor="red" backgroundColor="header" transparent="1">
+          <convert type="EGNetSpeedInfo">RC_MB</convert>
 	  </widget>
 	</screen>	<!-- External Files FHD -->
 	<include filename="/usr/share/enigma2/oDreamy-FHD/modules/skin_templates.xml"/>
