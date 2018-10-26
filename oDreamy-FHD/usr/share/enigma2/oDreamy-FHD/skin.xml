@@ -468,7 +468,7 @@
 	<!-- Menu FHD -->
 	<screen name="Menu" position="fill"  title="Menu" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy-FHD/menu/drlogo.png" position="860,670" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy-FHD/menu/setup_selection.png" position="860,670" size="256,256" zPosition="2" alphatest="blend" />
 	</screen> 
 
 	<!--  About -->
@@ -510,7 +510,7 @@
 		<widget source="lab3" render="Label" position="70,800" size="685,40" font="Regular; 32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
 		<ePixmap position="350,985" pixmap="oDreamy-FHD/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_green" render="Label" position="400,955" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="960,640" size="300,300" pixmap="oDreamy-FHD/menu/drlogo.png" alphatest="blend"/>
+		<ePixmap position="960,640" size="300,300" pixmap="oDreamy-FHD/menu/setup_selection.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S024" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1304,7 +1304,7 @@
 		<panel name="p800_Logo" />
 		<panel name="p800_Date"/>
 		<panel name="sRB"/>
-		<ePixmap pixmap="oDreamy-FHD/menu/drlogo.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy-FHD/menu/setup_selection.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="70,177"  size="40,40"   pixmap="oDreamy-FHD/icons/net_on.png" zPosition="1" alphatest="blend"/>
 		<widget source="Adaptertext" render="Label" position="130,180" size="100,50" font="Regular;36" foregroundColor="yellow" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget source="Adapter"     render="Label" position="250,180" size="500,50" font="Regular;36" foregroundColor="white"     backgroundColor="header" transparent="1" zPosition="1" />
@@ -1342,7 +1342,7 @@
 		<panel name="sRGY"/>
 		<widget name="config" position="70,180" size="820,540" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget source="introduction" render="Label" position="1280,560" size="560,80" font="Regular;34" foregroundColor="#ffffff" backgroundColor="bluette" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="oDreamy-FHD/menu/drlogo.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy-FHD/menu/setup_selection.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="1440,170" size="256,256" pixmap="oDreamy-FHD/menu/net.png" alphatest="blend"/>
 		<!--eLabel name="DEBUG" text="S144" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -2462,7 +2462,7 @@
 		<widget name="duration" position="500,160" size="500,60" font="Regular;36" foregroundColor="red"    backgroundColor="header" transparent="1" noWrap="1" valign="top" halign="left" />
 		<eLabel position="70,220" size="1480,2" backgroundColor="#202020" zPosition="1" />
 		<widget name="FullDescription" position="70,240" size="1480,600" font="Regular; 32" foregroundColor="#73c6ff" backgroundColor="#10000000" transparent="1" halign="left" />
-		<ePixmap position="1590,160"  size="256,256"  pixmap="oDreamy-FHD/menu/drlogo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="1590,160"  size="256,256"  pixmap="oDreamy-FHD/menu/setup_selection.png"  alphatest="blend" zPosition="2" />
 		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S232" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -2525,7 +2525,7 @@
 		<widget name="description" position="1260,560" size="610,300" font="Regular;32" halign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="2" />
 		<widget name="VKeyIcon" pixmap="oDreamy-FHD/buttons/key_text.png" alphatest="on" zPosition="1" position="70,680" size="50,25"/>
 		<widget name="HelpWindow" position="70,700" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<ePixmap pixmap="oDreamy-FHD/menu/drlogo.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy-FHD/menu/setup_selection.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
 		<ePixmap position="1270,38" size="200,90" pixmap="oDreamy-FHD/icons/logosmall.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="1440,180" size="256,256" pixmap="oDreamy-FHD/menu/info_screen.png" alphatest="blend" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S235" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -2611,7 +2611,7 @@
 		<eLabel position="1260,680" size="610,267" backgroundColor="#20000000" zPosition="1"/>
 		<widget name="Preview" position="1370,705" size="390,220" alphatest="on" zPosition="10"/>
 		<widget source="introduction" render="Label" position="300,982" size="500,40" font="Regular;32" halign="left" foregroundColor="#73c6ff" backgroundColor="header" zPosition="1" transparent="1"/>
-		<ePixmap pixmap="oDreamy-FHD/menu/drlogo.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy-FHD/menu/setup_selection.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
 		<!--eLabel name="DEBUG" text="S241" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3677,3 +3677,4 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
 	</screen>
 
 </skin>
+
