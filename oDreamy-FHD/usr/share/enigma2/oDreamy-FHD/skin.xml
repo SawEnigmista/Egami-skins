@@ -1044,7 +1044,7 @@
 		<ePixmap pixmap="oDreamy-FHD/buttons/vkey_ch.png" position="782,85" size="60,30" alphatest="blend" zPosition="2" />
 		<widget name="jump" position="830,95" size="200,25" font="Regular;17" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />		
 		<!-- Channels + Bar -->
-		<widget name="timeline_text" position="60,170" size="1180,80" font="Regular;28" selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
+		<widget name="timeline_text" position="60,155" size="1180,30" font="Regular;28" selectionDisabled="1" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" />
 		<widget name="list" position="60,220" size="1180,700" itemHeight="70" scrollbarMode="showNever" EntryBackgroundColor="#2f4974" EntryBackgroundColorSelected="#688cbf" EntryBorderColor="grey" transparent="1" />
 		<!-- Bouquet -->
 		<widget name="lab1" position="70,225" size="1150,390" halign="center" transparent="0" valign="center" zPosition="20" />
