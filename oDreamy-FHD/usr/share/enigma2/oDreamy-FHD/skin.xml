@@ -2965,10 +2965,10 @@
 		<panel name="p800_Template" />
 		<panel name="p800_DateMid" />
 		<panel name="p800_Logo" />
+		<panel name="sRG"/>
 		<widget name="list" position="70,180" size="820,720" itemHeight="40" font="Regular;30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget source="introduction" render="Label" position="70,820" size="820,40" font="Regular;32" halign="center" valign="center" backgroundColor="header" transparent="1"/>
 		<ePixmap position="960,645" size="256,256" pixmap="oDreamy-FHD/menu/ico_ci.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="60,970"  size="700,90"  pixmap="oDreamy-FHD/icons/team_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="DEBUG" text="S261" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
