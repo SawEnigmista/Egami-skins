@@ -71,8 +71,11 @@
 		<widget source="session.CurrentService" render="Label" position="700,1050" size="800,33" font="Regular;23" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
 			<convert type="EGExtraInfo">NetInfo</convert>
 		</widget>
- 		<widget source="session.CurrentService" render="Label" position="1600,1050" size="300,35" font="Regular;23" halign="right" foregroundColor="#505050" backgroundColor="header" transparent="1" zPosition="1">
+ 		<widget source="session.CurrentService" render="Label" position="1600,1050" size="300,35" font="Regular;20" halign="right" foregroundColor="#505050" backgroundColor="header" transparent="1" zPosition="1">
 			<convert type="EGExtraInfo">CamName</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1500,1050" size="250,26" font="Regular;23" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="1">
+      <convert type="CaidInfo2">CryptInfo2</convert>
 		</widget>
 		<!-- cpu/mem -->
 		<widget backgroundColor="black" font="Regular; 23" foregroundColor="yellow" halign="left" position="40,1050" render="Label" size="260,35" source="session.CurrentService" transparent="1" zPosition="3" text="CPU: 100%">
@@ -95,7 +98,7 @@
 		<convert type="MSNWeather">temperature_text,current</convert>
 		</widget>
 		<!-- Video Resolution -->
-		<widget source="session.CurrentService" render="Label" position="1500,1050" size="80,34" font="Regular;24" halign="right" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="3">
+		<!--<widget source="session.CurrentService" render="Label" position="1500,1050" size="80,34" font="Regular;24" halign="right" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="3">
 		<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
 		<eLabel text="x" position="1595,1050" size="15,34" font="Regular;24" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="3" />
@@ -104,7 +107,20 @@
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1650,1050" size="100,40" font="Regular;24" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="4">
 		<convert type="ServiceInfo">Framerate</convert>
-		</widget>
+		</widget>-->
+		<!-- HD icon -->
+	    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_4k_on.png" position="1650,1045" size="78,34" zPosition="2" alphatest="blend">
+	    <convert type="ServiceInfo">Is4K</convert>
+	    <convert type="ConditionalShowHide" />
+	  </widget>
+	  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_hd_on.png" position="1650,1045" size="78,34" zPosition="2" alphatest="blend">
+	    <convert type="ServiceInfo">IsHD</convert>
+	    <convert type="ConditionalShowHide" />
+	  </widget>
+	  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/ico_sd_on.png" position="1650,1045" size="78,34" zPosition="2" alphatest="blend">
+	    <convert type="ServiceInfo">IsSD</convert>
+	    <convert type="ConditionalShowHide" />
+	  </widget>
 
 		<eLabel position="1650,923" size="250,108" backgroundColor="#10202020" zPosition="0" />
 
@@ -119,12 +135,26 @@
  		<widget source="session.FrontendInfo" render="Label" position="1660,995" size="200,35" font="Regular;24" halign="left" foregroundColor="#B0B0B0" backgroundColor="header" transparent="1" zPosition="23">
 			<convert type="FrontendInfo">STRING</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv-info.png" position="1660,999" size="200,40" alphatest="blend" zPosition="1" transparent="1">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv1.png" position="1653,986" size="78,49" alphatest="blend" zPosition="1" transparent="1">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide">
 			</convert>
 		</widget>
+	  <!-- icon wifi/lan -->
+	  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/lan2.png" position="1806,965" size="68,30" zPosition="2" alphatest="blend">
+    <convert type="RouteInfo">Lan</convert>
+    <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/wifi2.png" position="1806,988" size="68,40" zPosition="2" alphatest="blend">
+    <convert type="RouteInfo">Wifi</convert>
+    <convert type="ConditionalShowHide" />
+    </widget>
+	  <!-- Speed wifi/lan -->
+		<widget source="session.CurrentService" render="Label" position="1670,1000" size="336,56" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="header" zPosition="2" transparent="1">
+    <convert type="EGNetSpeedInfo">RC_MB</convert>
+	  </widget>
 	</screen>
+
 
 	<!-- secondinfobar FHD -->
 	<screen name="SecondInfoBar" position="fill" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
