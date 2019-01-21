@@ -85,13 +85,13 @@
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="1778,660" size="150,113" source="session.MSNWeather" transparent="1" zPosition="1">
 		<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/msn3d/,png</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular; 33" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1451,827" size="450,39" source="session.MSNWeather" zPosition="1" halign="right" transparent="1" foregroundColor="green">
+		<widget noWrap="1" backgroundColor="background" font="Regular; 33" position="1451,827" size="450,39" source="session.MSNWeather" zPosition="1" halign="right" transparent="1" foregroundColor="green">
 		<convert type="MSNWeather">city</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular; 60" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1751,758" size="150,68" source="session.MSNWeather" transparent="1" zPosition="1" halign="right" foregroundColor="unff0000" text="45 `C" valign="top">
+		<widget noWrap="1" backgroundColor="background" font="Regular; 60" position="1751,758" size="150,68" source="session.MSNWeather" transparent="1" zPosition="1" halign="right" foregroundColor="unff0000" text="45 `C" valign="top">
 		<convert type="MSNWeather">temperature_current</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular; 33" foregroundColor="ltbluette" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1452,876" size="449,62" source="session.MSNWeather" zPosition="1" halign="right" transparent="1">
+		<widget noWrap="1" backgroundColor="background" font="Regular; 33" foregroundColor="ltbluette" position="1452,876" size="449,62" source="session.MSNWeather" zPosition="1" halign="right" transparent="1">
 		<convert type="MSNWeather">temperature_text,current</convert>
 		</widget>
 		<!-- Video Resolution -->
