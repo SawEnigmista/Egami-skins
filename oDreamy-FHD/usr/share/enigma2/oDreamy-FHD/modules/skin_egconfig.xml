@@ -139,7 +139,7 @@
  		<widget source="session.FrontendInfo" render="Label" position="1820,932" size="200,35" font="Regular;22" halign="left" foregroundColor="#B0B0B0" backgroundColor="header" transparent="1" zPosition="23">
 		<convert type="FrontendInfo">STRING</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv3.png" position="960,1050" size="56,23" alphatest="blend" zPosition="1" transparent="1">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv3.png" position="933,1050" size="56,23" alphatest="blend" zPosition="1" transparent="1">
 		<convert type="ServiceInfo">IsStream</convert>
 		<convert type="ConditionalShowHide">
 		</convert>
