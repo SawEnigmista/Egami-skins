@@ -84,18 +84,18 @@
 		<widget source="session.CurrentService" render="Label" zPosition="6" position="175,1050" size="380,55" halign="left" valign="center" font="Regular; 23" transparent="1" foregroundColor="white" backgroundColor="black">
 		<convert type="pliLayoutInfo">MemTotal</convert>
 		</widget>
-		<!-- Meteo infobar -->
+		<!-- Weather infobar -->
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="1778,610" size="150,113" source="session.MSNWeather" transparent="1" zPosition="1">
 		<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-FHD/msn/msn3d/,png</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular; 30" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1451,777" size="450,39" source="session.MSNWeather" zPosition="1" halign="right" transparent="1" foregroundColor="green">
-		<convert type="MSNWeather">city</convert>
+		<convert type="MSNWeather">temperature_text,current</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular; 57" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1751,708" size="150,68" source="session.MSNWeather" transparent="1" zPosition="1" halign="right" foregroundColor="unff0000" text="45 `C" valign="top">
+		<widget noWrap="1" backgroundColor="background" font="Regular; 48" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1751,708" size="150,68" source="session.MSNWeather" transparent="1" zPosition="1" halign="right" foregroundColor="unff0000" text="45 `C" valign="top">
 		<convert type="MSNWeather">temperature_current</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular; 30" render="TypeLabel" typeSpeed="1500" typeCaret="_" foregroundColor="ltbluette" position="1452,826" size="449,62" source="session.MSNWeather" zPosition="1" halign="right" transparent="1">
-		<convert type="MSNWeather">temperature_text,current</convert>
+		<convert type="MSNWeather">city</convert>
 		</widget>
 		<!-- Video Resolution -->
 		<!--<widget source="session.CurrentService" render="Label" position="1500,1050" size="80,34" font="Regular;24" halign="right" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="3">
@@ -126,19 +126,23 @@
 
 		<eLabel text="SNR:" position="1660,930" size="200,40" font="Regular;24" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1"/>
 		<widget source="session.FrontendStatus" render="Label" position="1720,930" size="200,35" font="Regular;23" halign="left" foregroundColor="green" backgroundColor="header" transparent="1" zPosition="1">
-			<convert type="FrontendInfo">SNR</convert>
+		<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1708,878" size="240,40" backgroundColor="header" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;24" >
-			<convert type="ClockToText">ShortFullDate</convert>
+		<!-- *** Time/Date infobar *** -->
+		<widget source="global.CurrentTime" render="Label" position="1550,878" size="240,40" backgroundColor="header" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;24" >
+		<convert type="ClockToText">ShortFullDate</convert>
 		</widget>
-
+		<ePixmap position="1760,886" size="16,16" pixmap="oDreamy-FHD/icons/clock.png" alphatest="blend" scale="1" zPosition="1" />
+		<widget source="global.CurrentTime" render="Label" position="1660,878" size="240,33" font="Regular;25" halign="right" foregroundColor="ltbluette" backgroundColor="header" transparent="1">
+		<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>
  		<widget source="session.FrontendInfo" render="Label" position="1820,932" size="200,35" font="Regular;22" halign="left" foregroundColor="#B0B0B0" backgroundColor="header" transparent="1" zPosition="23">
-			<convert type="FrontendInfo">STRING</convert>
+		<convert type="FrontendInfo">STRING</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="oDreamy-FHD/icons/iptv3.png" position="960,1050" size="56,23" alphatest="blend" zPosition="1" transparent="1">
-			<convert type="ServiceInfo">IsStream</convert>
-			<convert type="ConditionalShowHide">
-			</convert>
+		<convert type="ServiceInfo">IsStream</convert>
+		<convert type="ConditionalShowHide">
+		</convert>
 		</widget>
 	  <!-- icon wifi/lan -->
 	  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/oDreamy-FHD/icons/lan2.png" position="1800,965" size="68,30" zPosition="2" alphatest="blend">
