@@ -1,0 +1,1031 @@
+<!DOCTYPE html><html><head><title>ico_lan_on.png - Speedy Share - wrzucaj pliki tutaj</title>
+<meta property="og:title" content="Pobierz plik: ico_lan_on.png"/>
+<meta property="og:site_name" content="SpeedyShare"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.speedyshare.com/gf/logofb.png"/>
+
+<meta itemprop="name" content="Pobierz plik: ico_lan_on.png">
+<meta itemprop="image" content="http://www.speedyshare.com/gf/logofb.png">
+
+<meta name="description" content="Speedyshare jest serwisem oferującym wrzucanie plików. Dziel się nimi z przyjaciółmi, a nawet z obcymi.">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="pl">
+
+<style>
+body,td,p { font-family: Verdana; font-size: 12px; }
+
+html, body { height: 100%; margin: 0px; }
+form { margin: 0px; }
+input[type=text], input[type=password] { border: 1px solid #aaa; padding: 4px; }
+textarea { border: 1px solid #aaa; padding: 4px; }
+h1 { font-weight: normal; }
+pre { white-space: pre-line; }
+.wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -40px; overflow-x: hidden; }
+.footerBot, .push { height: 40px; }
+
+.searchbox
+{
+   height: 28px;
+   width: 590px;
+   font-family: Verdana;
+   font-size: 17px;
+   line-height: 28px;
+   border: 0px;
+   outline: none;
+}
+
+.searchboxaround
+{
+   width: 600px;
+   padding-left: 0px; padding-right: 0px;
+   position: relative; top: -3px;
+   background-color: #ffffff;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+.uploadboxaround, .uploadboxaroundNOHOVER
+{
+   width: 600px;
+   padding-left: 0px; padding-right: 0px;
+   border: 2px dashed  #abadb3;
+   background-color: #ffffff;
+   height: 70px;
+   line-height: 70px;
+   overflow: hidden;
+}
+.uploadboxaround:hover
+{
+   background-color: #f3f9ff;
+}
+.uploadboxaround:hover font
+{
+   color: #000000;
+}
+
+.filesmallimg
+{
+   background-image: url('/gf/file.png');
+   margin-left: 4px;
+   margin-right: 4px;
+   margin-top: 4px;
+   width: 16px;
+   height: 16px;
+}
+
+
+.prembutton, .filelistblue, .uploadboxaround, .uploadboxaroundNOHOVER,  .searchboxaround, .rounded
+{
+   border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+}
+
+.prembutton
+{
+   display: block;
+   text-align: center;
+   border: 1px solid #208eff;
+   background-color: #64b0ff;
+   color: #ffffff;
+   white-space: nowrap;
+   font-weight: bold;
+   font-size: 20px;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   outline: none;
+   cursor: pointer;
+   margin-bottom: 20px;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.prembutton:hover
+{
+   -moz-box-shadow: 1px 1px 5px #ccc;
+   -webkit-box-shadow: 1px 1px 5px #ccc;
+   box-shadow: 1px 1px 5px #ccc;
+   border: 1px solid #208eff;
+   background-color: #64b0ff;
+   color: #ffffff;
+}
+
+.premtabletd, .premtabletdb
+{
+   white-space: nowrap;
+}
+.premtabletdb
+{
+   border-bottom: 1px solid #dedede;
+}
+
+.premdescr
+{
+   font-size: 15px;
+   margin-right: 20px;
+}
+
+.fbutton
+{
+   text-decoration: none;
+}
+
+.fbutton, .fbuttoninp, .fbuttonfull, .fbuttonblue, .fbuttonbluesmall
+{
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   border: 1px solid silver;
+   background-color: #eeeeee;
+   color: #666666;
+   font-weight: bold;
+   font-size: 10px;
+   width: 100px;
+   white-space: nowrap;
+   height: 27px;
+   line-height: 27px;
+   outline: none;
+   border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+   cursor: pointer;
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+
+.fbuttoninp
+{
+   height: 20px;
+   line-height: 10px;
+   width: 40px;
+   font-family: Verdana;
+   display: inline;
+}
+
+.fbutton:hover, .fbuttoninp:hover, .fbuttonblue, .fbuttonbluesmall, .pagerNr
+{
+   -moz-box-shadow: 1px 1px 5px #ccc;
+   -webkit-box-shadow: 1px 1px 5px #ccc;
+   box-shadow: 1px 1px 5px #ccc;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#cccccc')";
+   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#cccccc');
+}
+
+.fbutton:hover, .fbuttoninp:hover, .fbuttonfull:hover, .fbuttonblue, .fbuttonbluesmall, .pagerNr:hover
+{
+   cursor: pointer;
+   border: 1px solid #208eff;
+   background-color: #64b0ff;
+   color: #ffffff;
+}
+
+.fbuttonfull, .fbuttonblue
+{
+   width: 100%;
+   margin-bottom: 20px;
+   font-size: 20px;
+   line-height: 40px;
+   height: 40px;
+}
+
+.choosepackage
+{
+   font-size: 20px;
+   border: 1px solid #bbbbbb;
+   border-bottom: 0;
+   padding: 10px;
+   color: #666666;
+}
+
+.fbuttonprem
+{
+   width: 165px;
+   color: #666666;
+   margin-bottom: 4px;
+   border: 1px solid #208eff;
+   cursor: pointer;
+}
+
+.fbuttonprem:hover b
+{
+    background-color: #64b0ff;
+    color: #ffffff;
+}
+.fbuttonprem:hover h1, .fbuttonprem:hover u
+{
+   background-color: #64b0ff;
+   color: white;
+}
+.fbuttonprem i
+{
+   display: block;
+   height: 5px;
+}
+.fbuttonprem b
+{
+   display: block;
+   padding: 10px;
+   font-size: 20px;
+   margin-bottom: 0px;
+   color: #ffffff;
+   background-color: #64b0ff;
+}
+.fbuttonprem h1
+{
+   margin-top: 0px;
+   margin-bottom: 0px;
+   font-size: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.fbuttonprem u
+{
+   text-decoration: none;
+   font-size: 11px;
+   display: block;
+   margin-top: 0;
+   padding-bottom: 5px;
+}
+.fbuttonprem a:hover
+{
+   border-bottom: 1px solid #64b0ff;
+}
+.prema
+{
+   margin: 0;
+   text-decoration: none;
+   color: #666666;
+}
+.prema:hover
+{
+   margin: 0;
+   text-decoration: none;
+}
+
+
+.headline
+{
+   background-color: #333333;
+   padding-left: 5px;
+   padding-right: 5px;
+   white-space: nowrap;
+   height: 38px;
+   z-index: 100;
+   position: absolute;
+   top: 0px;
+}
+
+.headlineleft, .headlineleftH, .headlineright, .headlinerightH
+{
+   font-size: 12px;
+   color: white;
+   padding:10px;
+   border-top: 2px solid #333333;
+   height: 16px;
+   text-decoration: none;
+}
+
+.headlineleft, .headlineleftH
+{
+   float: left;
+}
+.headlineright, .headlinerightH
+{
+   float: right;
+}
+
+.headlineleftH, .headlinerightH
+{
+   border-top: 2px solid #ffddaa;
+   font-weight: bold;
+}
+.headlineleft:hover, .headlineright:hover
+{
+   background-color: #666666;
+   cursor: pointer;
+   border-top: 2px solid #666666;
+}
+.headlineleftH:hover, .headlinerightH:hover
+{
+   background-color: #666666;
+   cursor: pointer;
+}
+
+.bottomlinksH {
+        line-height: 35px;
+        border-top: 1px solid #eeeeee;
+}
+.bottomlinks {
+	font-size:10px;
+        color: #666666;
+        line-height: 15px;
+        text-decoration: none;
+        margin: 4px;
+}
+
+.bottomlinks:hover {
+text-decoration: underline;
+}
+
+.footer {
+    height:40px;
+    width:100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ytimgover, .ytimgoverHQ { float: left; white-space: nowrap; overflow: hidden; width: 120px; height: 90px; margin: 10px 20px 10px 0px; }
+.ytimgdiv, .ytimgdivHQ { position: relative; border: 1px solid #333333; width: 118px; overflow: hidden; height: 66px; z-index 2; }
+.ytimg, .ytimgHQ { position: relative; top: -12px; border: 0px; z-index: 1; }
+.ytreltxt { text-decoration: none; color: #333333; }
+
+.ytimgoverHQ { width: 240px; height: 180px; }
+.ytimgdivHQ { width: 238px; height: 128px; }
+.ytimgHQ { width: 240px; height: 180px; top: -24px; }
+
+.searchresultlink
+{
+   font-size: 15px;
+   color: blue;
+}
+
+.tag, .tag a { color: green; text-decoration: none; font-size: 11px; }
+.tag a:hover { text-decoration: underline; }
+
+.searchhead
+{
+   font-size: 25px;
+   color: #333333;
+   margin-bottom: 15px;
+   margin-left: -1px;
+}
+
+.resultshort
+{
+   color: #000000;
+}
+.resultshort b
+{
+   color: #000000;
+}
+.resultshort u
+{
+   text-decoration: none;
+   color: #555555;
+}
+
+
+.downloadfilename, .downloadfilenamenotfound, .comheader, .centerheader
+{
+   font-size: 25px;
+   margin-bottom: 5px;
+   margin-top: 0px;
+   color: #333333;
+   white-space: nowrap;
+   overflow: hidden;
+   text-decoration: none;
+   border-bottom: 1px dashed #cccccc;
+}
+.downloadfilenamenotfound, .downloadfilename
+{
+   border-bottom: 1px solid #ffffff;
+}
+
+.centerheader
+{
+   border:0;
+}
+
+.downloadfilename
+{
+   cursor: default;
+}
+.commenthead
+{
+   color: #555555;
+   text-decoration: none;
+   font-size: 25px;
+}
+
+.sizetag
+{
+   margin-left: 20px;
+}
+
+.sizetagtext
+{
+   color: #996633;
+   font-size: 10px;
+   font-weight: bold;
+   white-space: nowrap;
+   line-height: 28px;
+}
+
+.remotelinkstable
+{
+   margin: 10px 10px 10px 0px;
+   padding: 10px;
+   border: 1px solid #dedede;
+}
+.remotelinkstable td
+{
+   padding: 4px;
+}
+
+.remotelinkstable tr:hover
+{
+   background-color: #dedede;
+}
+
+.tagcloser
+{
+   color: #aaaaaa;
+   padding-left: 2px;
+   padding-right: 2px;
+   border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+   cursor: pointer;
+   text-decoration: none;
+}
+.tagcloser:hover
+{
+   background-color: #333333;
+   color: white;
+   cursor: pointer;
+}
+
+.dlimg1,.dlimg2,.dlimg3
+{
+border: 1px solid white;
+border-radius: 8px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+}
+
+.dlimg1:hover
+{
+-moz-box-shadow: 0px 0px 5px #3b9f3b;
+-webkit-box-shadow: 0px 0px 5px #3b9f3b;
+box-shadow: 0px 0px 5px #3b9f3b;
+}
+.dlimg2:hover
+{
+-moz-box-shadow: 0px 0px 5px #39a0bf;
+-webkit-box-shadow: 0px 0px 5px #39a0bf;
+box-shadow: 0px 0px 5px #39a0bf;
+}
+.dlimg3:hover
+{
+-moz-box-shadow: 0px 0px 5px #d18b28;
+-webkit-box-shadow: 0px 0px 5px #d18b28;
+box-shadow: 0px 0px 5px #d18b28;
+}
+
+.filelist, .filelistdone
+{
+   border-bottom: 1px solid #eeeeee;
+   height: 35px;
+   width: 602px;
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.filelistblue
+{
+   border: 1px solid #96caff;
+   background-color: #d0e7ff;
+}
+
+.filelist table, .filelistdone table
+{
+   background-image: url('/gf/white.png');
+   background-position: 800px 0px;
+   background-repeat: no-repeat;
+}
+
+.filelistdone
+{
+   cursor: pointer;
+}
+
+.filelistdone
+{
+   background-color: #c6e2ff;
+}
+
+.pagerW { margin-top: 20px; }
+.pagerW a
+{
+   text-decoration:none;
+   color: black;
+}
+.pagerNr,.pagerNrCurrent
+{
+   border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px;
+   padding: 7px;
+   margin-right: 10px;
+   border: 1px solid silver;
+   background-color: #eeeeee;
+   font-size: 11px;
+}
+.pagerNr { color: #0000FF; }
+.pagerNrCurrent { color: #AAAAAA; }
+.pagerMr:hover
+{
+   background-color: red;
+}
+
+
+.elip
+{
+   line-height: 22px;
+   margin-top: 1px;
+   white-space: nowrap;
+   width: 450px;
+   overflow: hidden;
+   -o-text-overflow: ellipsis;
+   text-overflow: ellipsis;
+   height: 22px;
+}
+
+.hinp
+{
+   height: 22px;
+   border: 0px;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   outline: none;
+   font-family: Verdana;
+   font-size: 12px;
+   cursor: pointer;
+}
+
+
+.transclass
+{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.fasttransition
+{
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+.finp
+{
+   width: 600px;
+   height: 70px;
+   line-height: 70px;
+   filter: alpha(opacity=0);
+   opacity: 0;
+   outline: none;
+   cursor: pointer;
+}
+
+.movable
+{
+   width: 70px;
+   overflow: hidden;
+   position: absolute;
+}
+
+.loginbox
+{
+   border: 1px solid #cccccc;
+   border-top: 0;
+   -moz-box-shadow: 3px 3px 3px #eeeeee;
+   -webkit-box-shadow: 3px 3px 3px #eeeeee;
+   box-shadow: 3px 3px 3px #eeeeee;
+}
+
+.hline
+{
+   margin-left: 30px;
+   margin-right: 50px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 190px;
+   height: 1px;
+   border-bottom: 1px solid #eeeeee;
+}
+
+.inpfilelink
+{
+   width: 430px;
+   font-size: 11px;
+   font-family: verdana;
+   padding: 3px;
+   border: 1px solid #82AFE7;
+}
+
+.loginlinks
+{
+   color: #cccccc;
+   text-decoration: none;
+   font-size: 10px;
+   font-family: Verdana;
+}
+.loginlinks:hover
+{
+   color: #333333;
+   text-decoration: underline;
+}
+
+
+.filtersH, .filtersXH, .filtersX, .filters, .filtert, .filtertH
+{
+   font-size: 13px;
+   text-decoration: none;
+   display: block;
+   color: #000000;
+   white-space: nowrap;
+}
+
+.filtersX, .filtersXH
+{
+   padding: 5px;
+   margin-left: 5px;
+}
+
+.filtersH, .filters, .filtert, .filtertH
+{
+   padding: 5px;
+   padding-left: 20px;
+   width: 165px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+
+.filtersH:hover, .filtersXH:hover, .filtersX:hover, .filters:hover, .filtert:hover, .filtertH:hover, .hosters tr:hover
+{
+   background-color: #eeeeee;
+   cursor: pointer;
+}
+
+.filtersH, .filtersXH, .filtertH
+{
+   color: orange;
+   font-weight: bold;
+}
+
+.hosters
+{
+   margin-left: 30px;
+}
+
+.upfeatures td
+{
+   color: #444444;
+}
+
+.upfeatures td:hover
+{
+   cursor: default;
+   color: #000000;
+}
+
+.histfile
+{
+   border-bottom: 1px solid #eeeeee;
+   white-space: nowrap;
+   cursor: pointer;
+}
+.histtop td
+{
+   border-bottom: 1px solid silver;
+   background-color: #eeeeee;
+   white-space: nowrap;
+}
+.histbot > td
+{
+   border-top: 1px solid silver;
+   background-color: #eeeeee;
+   white-space: nowrap;
+}
+.histfile:hover
+{
+   background-color: #eeeeee;
+}
+.oram
+{
+   border: 1px solid silver;
+   padding: 2px;
+   padding-left: 5px; padding-right: 5px;
+   margin-left: 5px;
+   background-color: #ffffff;
+   text-decoration: none;
+   border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+   color: #000000;
+}
+.oram:hover
+{
+   background-color: #333333;
+   color: #ffffff;
+   border: 1px solid #333333;
+   cursor: pointer;
+}
+.linkview td
+{
+   white-space: nowrap;
+   line-height: 25px;
+}
+.hsortlinks
+{
+   color: #333333;
+}
+
+.foldertable
+{
+   width: 500px;
+}
+.foldertable th
+{
+   border-bottom: 1px solid silver;
+   text-align: left;
+   font-weight: normal;
+}
+
+.foldertable th, .foldertable td
+{
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.botop
+{
+   border-top: 1px solid silver;
+}
+
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {display: none !important;}
+</style>
+
+<script>
+if (window!=top) { top.location.href=location.href; }function zindexLower(lower)
+{
+   var social=document.getElementById('social');
+   var gad1=document.getElementById('gad1');
+   var gad2=document.getElementById('gad2');
+   var yt=document.getElementById('ytvideo');
+
+   if (lower)
+   {
+      if (social) social.style.zIndex=-1;
+      if (gad1) gad1.style.zIndex=-1;
+      if (gad2) gad2.style.zIndex=-1;
+      if (yt) yt.style.zIndex=-1;
+   }
+   else
+   {
+      if (social) social.style.zIndex='';
+      if (gad1) gad1.style.zIndex='';
+      if (gad2) gad2.style.zIndex='';
+      if (yt) yt.style.zIndex='';
+   }
+}
+
+function toggleLoginBox()
+{
+   var t=document.getElementById('loginmenu');
+   var box=document.getElementById('logbox');
+   if (box.style.marginTop!='35px')
+   {
+      zindexLower(1);
+      box.filter='alpha(opacity=100)';
+      box.style.opacity=1;
+      box.style.marginTop='35px';
+      t.style.backgroundColor='#666666';
+      t.style.borderTop='2px solid #666666';
+      document.getElementById('login').focus();
+   }
+   else
+   {
+      box.filter='alpha(opacity=0)';
+      box.style.opacity=0;
+      box.style.marginTop='-300px';
+      t.style.backgroundColor='';
+      t.style.borderTop='';
+      setTimeout("zindexLower(0)",500);
+      document.getElementById('login').blur();
+   }
+}
+
+function getOffsetX(el)
+{
+    var x=0;
+    while( el && !isNaN( el.offsetLeft ) )
+    {
+        x += el.offsetLeft;
+        el = el.offsetParent;
+    }
+    return x;
+}
+
+function shiftLogo()
+{
+   var d0=document.getElementById('logopart0');
+   var x=getOffsetX(d0);
+   if (x<140) x=140;
+   document.getElementById('logopart1').style.marginLeft=(x-118)+'px';
+   document.getElementById('logopart2').style.left=x+'px';
+   return;
+}
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2034316-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+<script src=/jquery-1.11.1.min.js></script>
+
+<div class=wrapper id=dropzone style='z-index: 10'>
+
+<table width="100%" border=0 cellspacing=0 cellpadding=0 class=headline>
+<tr><td align=left></td>
+<td align=right>
+<a target=_top class=headlineright href="http://www.speedyshare.com/login.php" id=loginmenu onClick="toggleLoginBox(); return false;"><b>Zaloguj</b></a><a target=_top class=headlineright href="http://www.speedyshare.com/news.php"><b>Lista zmian</b></a><div class=headlineright onClick="location.href='/translate.php?returnto=L2J6YjhFL2ljby1sYW4tb24ucG5n'" style="padding: 0px; padding-left: 5px; padding-right: 5px; height: 36px;"><table border=0 cellspacing=0 cellpadding=4><tr><td><img src="/gf/flags/Poland.png" border=0 width=24 height=24 style="margin-top: 1px;"></td><td><a target=_top style="color: white; font-size: 12px; text-decoration: none;" href="http://www.speedyshare.com/translate.php?returnto=L2J6YjhFL2ljby1sYW4tb24ucG5n"> polski</a></td></tr></table></div></td></tr>
+</table>
+<div style='height: 38px; overflow: hidden; white-space: nowrap; z-index: 55'></div>
+
+<div class=transclass id=logbox style=' position: absolute; top: 0px; right: 0px; margin-top: -300px; margin-right: 5px;'>
+<table border=0 bgcolor=white cellspacing=0 cellpadding=20 class=loginbox>
+               <tr><td>
+                   <form action='https://www.speedyshare.com/login.php' method=post id=loginform target='_top'>
+                   <input type=hidden name=redir value="/bzb8E/ico-lan-on.png">
+                   <div style='margin-top: 15px;' align=left>Login:</div>
+                   <div style='border: 1px solid #cccccc; padding: 5px;'><input id=login type=text name=login style='width:100%; padding:0; border-width:0; font-size: 15px; outline: none;'></div>
+                   <div style='margin-top: 15px;' align=left>Hasło:</div>
+                   <div style='border: 1px solid #cccccc; padding: 5px;'><input id=passw type=password name=pass style='width:100%; padding:0; border-width:0; font-size: 15px; outline: none'></div>
+                   <table cellspacing=0 cellpadding=0 style='margin-top: 20px;'>
+                   <tr><td><div style='overflow: hidden; width: 110px; height: 35px;'><input type=submit value='Zaloguj' style='position: absolute; z-index: -1'><a href='#' class=fbutton onClick="document.getElementById('loginform').submit(); return false;">Zaloguj</a></div></td>
+                       <td valign=top style='padding-left: 30px; white-space: nowrap; padding-top: 5px;'><input type=checkbox id=remember name=remember style='vertical-align: middle;'><label style='vertical-align: middle;' for=remember> Zawsze zalogowany</label></td></tr>
+                   <tr><td colspan=2><hr noshade size=1 color=#ffffff style='margin-top: 30px; border-bottom: 1px solid #eeeeee;'></td></tr>
+                   <tr><td><a class=loginlinks target=_top href=http://www.speedyshare.com/premium.php>Utwórz konto</a></td>
+                       <td align=right><a class=loginlinks target=_top href=http://www.speedyshare.com/reminder.php>Zapomniałeś hasła?</a></td></tr>
+                   </table>
+                   </form>
+               </td></tr></table></div>
+<div style='background-color: #f7f7f7; height: 60px; border-bottom: 1px solid #dedede;'><form action="/search.php"><table border=0 width='100%' cellspacing=0 cellpadding=0><tr><td valign=top width=278><a href=/><img src=/gf/small_logo_text.png id=logopart1 hspace=20 width=238 height=45 border=0><img width=120 height=29 border=0 style='position: absolute; top: 9px; left: 138px; z-index: 1001' src=/gf/small_logo_arrow.png id=logopart2></a><script>shiftLogo();</script></td><td valign=top style='padding-left: 10px; padding-top: 16px;' width=620></td></tr></table></form></div><br><br><table border=0 cellspacing=0 cellpadding=0><tr><td valign=top width=270><div style='margin-left: 35px;'><div id=social class=transclass style='display: block; position: relative; overflow: hidden; width: 182px; height: 64px;'>
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+
+<!-- google -->
+<td valign=top style='padding-left: 0px; padding-top: 2px;'>
+<div style='overflow: hidden; width: 50px;'>
+<div class='g-plusone' data-size='tall' data-href='http://www.speedyshare.com/'></div>
+</div>
+<script type='text/javascript'>
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'http://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+</td>
+
+<!-- facebook -->
+<td valign=top style='padding-left: 11px; padding-top: 1px;'>
+<div style='overflow: hidden; width: 50px;'>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.speedyshare.com%2F&amp;locale=en_US&amp;send=false&amp;layout=box_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:90px;" allowTransparency="true"></iframe>
+</div>
+</td>
+
+<!-- twitter -->
+<td valign=top style='padding-left: 6px; padding-top: 1px;'>
+<div style='overflow: hidden; width: 64px;'>
+<a href='https://twitter.com/share' class='twitter-share-button' data-url='http://www.speedyshare.com/' data-count='vertical' data-lang='en'>Tweet</a><script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>
+
+</div>
+</td>
+
+</tr></table>
+</div></div><hr noshade color=#ffffff class=hline style="margin-right: 50px;"><a target=_top href="/" class=filtersH>Wrzuć plik</a>
+           <a href="/premium.php" class=filters>Kup Premium</a>
+           <a target=_top href="/money.php" class=filters>Zarabiaj</a>
+           <a href="/drive.php" class=filters>Speedy Drive</a>
+           <hr noshade color=#ffffff class=hline>
+           <a target=_top href="/abuse.php" class=filters>Zgłoś nadużycie</a>
+           <a href="/contact.php" class=filters>Kontakt</a></td><td valign=top><table border=0 cellspacing=0 cellpadding=0><tr><td valign=top style='white-space: nowrap;'><span style='font-size: 25px;'>Pobierz:&nbsp;</span><span class=downloadfilename>ico lan on.png</span></td>
+         <td valign=top><div id=sizetable style='position: relative; top: 1px; z-index: -1'><table class=sizetag border=0 cellspacing=0 cellpadding=0><tr><td><img src=/gf/tag1.png width=19 height=28></td><td background=/gf/tag2.png valign=top><div class=sizetagtext>2.57 KB</div></td><td><img src=/gf/tag3.png width=8 height=28></td></tr></table></div></td></tr><script>
+         var g_star=4;
+         function rate(r)
+         {
+            var j=0; var i=0;
+            var e=document.getElementById('rating').firstChild;
+            for (i=0; i<=r; i++) { e.src='/gf/star1.png'; e=e.nextSibling; }
+            while (e) { e.src='/gf/star3.png'; e=e.nextSibling; }
+         }
+         </script><tr><td colspan=2 align=left style='padding-top: 4px;'><span style="cursor: pointer;" id=rating onMouseOut="rate(g_star)"><img width=24 height=24 src=/gf/star1.png onMouseOver='rate(0)' onClick='g_star=0;'><img width=24 height=24 src=/gf/star1.png onMouseOver='rate(1)' onClick='g_star=1;'><img width=24 height=24 src=/gf/star1.png onMouseOver='rate(2)' onClick='g_star=2;'><img width=24 height=24 src=/gf/star1.png onMouseOver='rate(3)' onClick='g_star=3;'><img width=24 height=24 src=/gf/star1.png onMouseOver='rate(4)' onClick='g_star=4;'></span></td></tr></table><br><br><br>
+     <style>
+        .dlchoices { font-family: Verdana; font-size: 12px; }
+        .bigtext { font-size: 20px; color: brown; padding-bottom: 20px; width: 250px;  white-space: nowrap; }
+        hr.horizline{margin-right: 35px; margin-left:20px; margin-top: 30px; border:0;height:200px;width:1px;background:-webkit-linear-gradient(top,#eee,#777,#eee);background:-moz-linear-gradient(top,#eee,#777,#eee);background:-ms-linear-gradient(top,#eee,#777,#eee);background:-o-linear-gradient(top,#eee,#777,#eee);background:linear-gradient(top,#eee,#777,#eee);}
+     </style>
+
+     <table border=0 cellspacing=0 cellpadding=0 style='border: 1px solid #dddddd; width: 800px; aox-shadow: 1px 1px 5px #eeeeee;' align=center>
+     <tr><td style='padding: 20px;'>
+
+        <table class=dlchoices border=0 cellspacing=0 cellpadding=0 style='width: 100%; position: relative; left: 10px;'>
+        <tr>
+              <td class=bigtext>Premium download</td>
+              <td valign=top rowspan=3><hr class=horizline></td>
+              <td class=bigtext>Limited download</td>
+              <td valign=top rowspan=3><hr class=horizline></td>
+              <td class=bigtext>Download Manager</td>
+        </tr>
+        <tr>
+           <td valign=top>
+              <div style='line-height: 26px; white-space: nowrap;'>
+                 <img src=/gf/imgok.png border=0 width=15 height=13 style='position: relative; top: 1px;'>&nbsp; unlimited download speed<br>
+                 <img src=/gf/imgok.png border=0 width=15 height=13 style='position: relative; top: 1px;'>&nbsp; unlimited download slots<br>
+                 <img src=/gf/imgok.png border=0 width=15 height=13 style='position: relative; top: 1px;'>&nbsp; resume broken downloads<br>
+                 <img src=/gf/imgok.png border=0 width=15 height=13 style='position: relative; top: 1px;'>&nbsp; download time: instant
+              </div>
+           </td>
+           <td valign=top>
+              <div style='line-height: 26px; white-space: nowrap;'>
+                 <img src=/gf/imgno.png border=0 width=12 height=12 style='position: relative; top: 1px;'>&nbsp; limited download speed<br>
+                 <img src=/gf/imgno.png border=0 width=12 height=12 style='position: relative; top: 1px;'>&nbsp; only 1 download slot<br>
+                 <img src=/gf/imgno.png border=0 width=12 height=12 style='position: relative; top: 1px;'>&nbsp; no resume support<br>
+                 <img src=/gf/imgno.png border=0 width=12 height=12 style='position: relative; top: 1px;'>&nbsp; download time: instant
+              </div>
+           </td>
+           <td valign=top>
+              <p align=justify style='margin-top: 0px; width: 180px; line-height: 26px;'>Get Download Manager, a small windows application which helps you download all files for free.
+           </td>
+        </tr>
+
+        <tr>
+           <td><a href='/premium.php'><img src=/gf/fastdownload.png alt='Fast Download' border=0 width=182 height=45 class=dlimg1></a></td>
+           <td><a href='/bzb8E/download/ico-lan-on.png'><img src=/gf/slowdownload.png alt='Slow Download' border=0 width=186 height=45 class=dlimg2></a></td>
+           <td><a href='http://tinydm.com/install/TinyDM_setup.exe'><img src=/gf/downloadexe.png alt='Download EXE' border=0 width=182 height=45 class=dlimg3></a></td>
+        </tr>
+
+        </table>
+
+     </td></tr>
+     </table><br><br><br><br><div style='margin-bottom: 40px; min-width: 700px;'><table bgcolor=#dddddd cellspacing=0 cellpadding=5 border=0 width='100%' style='border: 1px solid #dddddd;'>
+             <tr><td bgcolor=#eeeeee style='white-space: nowrap; padding-left: 15px; line-height: 35px;'><b>Dziel się plikiem</b></td><td bgcolor=#eeeeee style='padding-right: 15px;'><div class="addthis_toolbox addthis_default_style addthis_32x32_style"'><a class="addthis_counter addthis_bubble_style" style='float: right;'></a><a class="addthis_button_compact" style='float: right;'></a><a class="addthis_button_blogger"  style='float: right;'></a><a class="addthis_button_favorites"  style='float: right;'></a><a class="addthis_button_email"  style='float: right;'></a><a class="addthis_button_google"  style='float: right;'></a><a class="addthis_button_twitter"  style='float: right;'></a><a class="addthis_button_facebook"  style='float: right;'></a></div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4ed5ec964eae3eda"></script></td></tr>
+             <tr><td width=10 bgcolor=#ffffff style='padding: 15px; padding-top: 25px; white-space: nowrap;'>Strona z plikiem:</td><td bgcolor=#ffffff style='padding-top: 15px; padding-right: 15px;'>
+                <div style='border: 1px solid #dddddd; padding: 5px; background-color: #ffffff;'><input value='http://speedy.sh/bzb8E/ico-lan-on.png' autocomplete=off type=text style='padding:0; width: 100%; border-width:0; background-color: #ffffff; font-size: 12px; font-family: Verdana; outline: none;'></div>
+             </td></tr>
+             <tr><td bgcolor=#ffffff style='padding: 15px; padding-top: 15px; white-space: nowrap;'>Link na forum:</td><td bgcolor=#ffffff style='padding-right: 15px;'>
+               <div style='border: 1px solid #dddddd; padding: 5px; background-color: #ffffff;'><input value='[code]http://speedy.sh/bzb8E/ico-lan-on.png[/code]' autocomplete=off type=text style='padding:0; width: 100%; border-width:0; background-color: #ffffff; font-size: 12px; font-family: Verdana; outline: none; '></div>
+             </td></tr>
+             <tr><td bgcolor=#ffffff style='padding: 15px; padding-top: 15px; padding-bottom: 20px; white-space: nowrap;'>kod HTML:</td><td bgcolor=#ffffff style='padding-bottom: 15px; padding-right: 15px;'>
+               <div style='border: 1px solid #dddddd; padding: 5px; background-color: #ffffff;'><input value='<a href="http://speedy.sh/bzb8E/ico-lan-on.png">Download at SpeedyShare</a>' autocomplete=off type=text style='padding:0; width: 100%; border-width:0; background-color: #ffffff; font-size: 12px; font-family: Verdana; outline: none;'></div>
+             </td></tr></table></div></td></tr></table><br><br><br><br>
+<div class=push></div>
+</div>
+
+
+<div class=footerBot>
+<div class=footer>
+
+<div align=center class=bottomlinksH>
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/">Wrzuć Plik</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/login.php">Logowanie</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/faq.php">FAQ</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/money.php">Zarabiaj</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/delete.php">Usuń plik</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/terms.php">Regulamin</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/dmca.php">Prywatność</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/about.php">O nas</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/contact.php">Kontakt</a> -
+<a class=bottomlinks target=_top href="http://www.speedyshare.com/abuse.php">Zgłoś nadużycie</a>
+</div>
+
+<script>(function(){ var im=new Image(); im.src='http://speedydrive.net/gf/spacer.gif';})();</script></div>
+</div>
+</body>
+</html>

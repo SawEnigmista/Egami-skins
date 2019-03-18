@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- openDreamy v1.0 skin, based on Dreamy by mmark (E2skin.blogspot.com) -->
+<!-- This skin is a Freeware. Everyone can modify and use it in other images -->
+<!-- !!!!!!! BUT DO NOT REMOVE OR CHANGE THIS DISCLAIMER !!!!!!! -->
+<!-- Do whatever you want with this skin,but don't tell it's yours, or your idea --> 
+<!--    and leave the credentials in the "About-box" as they are -->
+
+<!-- cat /etc/image-version -->
+<rules>	
+	<!-- Colors of InfoBar Panel -->
+
+	<ruleset name="ColorKeys">	
+		<rule type="marker"  Name="pli"              Red=""           Green=""            Yellow="Audio"      Blue="Extensions" >  </rule>			
+		<rule type="marker"  Name="egami"            Red="EPG"        Green="Plugins"     Yellow="Extensions" Blue="EGAMI" >         </rule>		
+		<rule type="marker"  Name="openatv"          Red="InfoPanel"  Green="Plugins"     Yellow="Audio"      Blue="" >            </rule>	
+		<rule type="marker"  Name="opennfr"          Red="SoftCam"    Green=""            Yellow="Extensions" Blue="QuickMenu" >   </rule>	
+		<rule type="marker"  Name="openvix"          Red=""           Green=""            Yellow=""           Blue="" >            </rule>	
+		<rule type="marker"  Name="openmips"         Red="EPG"        Green="Plugins"     Yellow="TimeShift"  Blue="Extensions" >  </rule>	
+		<rule type="marker"  Name="opendroid"        Red="EPG"        Green="Plugins"     Yellow=""           Blue="" >            </rule>	
+		<rule type="marker"  Name="openesi"          Red="EPG"        Green="Plugins"     Yellow="Audio"      Blue="" >            </rule>	
+		<rule type="marker"  Name="openhdf"          Red=""           Green=""            Yellow="EPG"        Blue="" >            </rule>	
+		<rule type="marker"  Name="Italysat"         Red=""           Green=""            Yellow=""           Blue="" >            </rule>	
+		<rule type="marker"  Name="Atemio4you Team"  Red=""           Green=""            Yellow=""           Blue="" >            </rule>	
+		<rule type="marker"  Name="hdmu"             Red=""           Green="Video"       Yellow=""           Blue="" >            </rule>	
+		<rule type="marker"  Name="pkt"              Red="Extensions" Green="MediaPlayer" Yellow="EPG"        Blue="BluePanel" >   </rule>	
+	</ruleset>				
+
+	<!-- Colors of Plugin Panel -->
+
+	<ruleset name="Plugins">	
+		<rule type="marker"  Name="openhdf"          Red="Exit"       Green="Download"   Yellow="Sort"       Blue="" >            </rule>	
+	</ruleset>
+</rules>

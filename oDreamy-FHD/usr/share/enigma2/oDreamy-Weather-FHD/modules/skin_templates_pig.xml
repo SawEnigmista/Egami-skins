@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+	<!--
+	################### mmark_openDreamy Templates v.1.0 ####################
+	#                                                                       #
+	#      mmark             Version 2.0.0 released          30-07-2016     #
+	#                                                                       #
+	#########################################################################
+	-->
+	<!-- openDreamy v1.0 skin, based on Dreamy by mmark (E2skin.blogspot.com) -->
+	<!-- This skin is a Freeware. Everyone can modify and use it in other images -->
+	<!-- !!!!!!! BUT DO NOT REMOVE OR CHANGE THIS DISCLAIMER !!!!!!! -->
+	<!-- Do whatever you want with this skin,but don't tell it's yours, or your idea --> 
+	<!--    and leave the credentials in the "About-box" as they are -->
+
+	<!-- Menu Template FHD -->
+	<screen name="MenuTemplate" >
+		<panel name="p700_Template" />
+		<panel name="p800_Date" />
+		<panel name="menu_sort" />
+		<!-- menu list -->
+		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png"    alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/maxbargh.png" position="805,180" size="15,720" alphatest="blend" zPosition="5" />
+		<widget source="menu" render="Listbox" position="45,180" size="775,720" scrollbarMode="showOnDemand" transparent="1" zPosition="1" 
+			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
+			selectionPixmap="box/slider.png" backgroundPixmap="box/sliderb.png" >
+ 			<convert type="TemplatedMultiContent">
+ 				{"template": [ MultiContentEntryText(pos = (100, 10), size = (685, 65), flags = RT_HALIGN_LEFT, text = 0),
+ 				MultiContentEntryPixmapAlphaBlend(pos=(20,2),size=(56,56),png=5,)],
+ 				"fonts": [gFont("Regular", 35)],
+ 				"itemHeight": 60
+ 				}
+ 			</convert>
+ 		</widget>
+		<ePixmap position="60,970"  size="700,90"  pixmap="icons/team_logo.png"  alphatest="blend" zPosition="2" />
+		<!--ePixmap pixmap="ico_master.png" position="860,645" size="256,256" alphatest="blend" zPosition="5" /-->
+		<widget source="session.CurrentService" render="Label" position="1180,540" size="700,40" font="Regular;30" backgroundColor="#10000000" foregroundColor="#e8e9b1" transparent="1" zPosition="99">
+            <convert type="EGStbInfo">All</convert>
+            </widget>
+	</screen> 
+	
+	<!-- Button Templates Menu Sort -->
+	<screen name="menu_sort">
+		<widget name="green"  position="530,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="490,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="yellow" position="800,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="760,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+	</screen>
+
+	<!-- P700 Template FHD -->
+	<screen name="p700_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 700p Upper Panel -->
+		<eLabel position="50,30"    size="1100,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1096,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="70,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;50" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1100,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1096,796" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,137"   size="770,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="810,934"  size="340,10"   backgroundColor="bluette"   zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1100,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1098,93"  backgroundColor="trbluette" zPosition="-1" />
+	</screen>
+
+	<!-- P700 Logo FHD -->
+	<screen name="p700_Logo" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Logo -->
+		<ePixmap position="830,160" size="400,700" pixmap="menu/teamlogo.png"    alphatest="blend" zPosition="1" />
+		<eLabel  position="810,180"  size="10,720" backgroundColor="#301b3c85" zPosition="2" />
+	</screen>
+
+	<!-- P700 Date FHD -->
+	<screen name="p700_Date" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Date -->
+		<widget source="global.CurrentTime" render="Label" position="730,30" size="400,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+			<convert type="ClockToText">Format %A %d %B </convert>
+		</widget>
+	</screen>
+
+	<!-- P800 Template FHD -->
+	<screen name="p800_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 800p Upper Panel -->
+		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1196,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136"   size="860,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="900,934"  size="350,10"   backgroundColor="bluette" zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+	
+		<!-- P800 Template black FHD -->
+	<screen name="p800_Template_black" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 800p Upper Panel -->
+		<ePixmap position="0,0" size="1920,1080" pixmap="icons/1/pluginpig.png"      alphatest="1" zPosition="-2" />		<!-- Code -->
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+	
+			<!-- P2800 Template FHD -->
+	<screen name="p2800_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 800p Upper Panel -->
+		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1200,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1196,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136"   size="860,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="900,934"  size="350,10"   backgroundColor="bluette" zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+	
+			<!-- P1800 Template FHD -->
+	<screen name="p1800_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+	
+		<!-- P8000 Template FHD -->
+		
+	<screen name="p8000_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 800p Upper Panel -->
+		<eLabel position="50,30"    size="1200,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1196,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;40" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1820,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1815,795" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="50,136"   size="860,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="1520,934"  size="350,10"   backgroundColor="bluette" zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+
+	<!-- P800 Template FHD -->
+	<screen name="p800_TemplateSlim" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 800p Upper Panel -->
+		<eLabel position="50,30"  size="1200,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="52,32"  size="1196,91"  backgroundColor="#20000000" zPosition="-2" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;34" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,136"   size="860,10"   backgroundColor="bluette"   zPosition="0"  />
+		<eLabel position="50,140"   size="1202,800" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="52,142"   size="1196,795" backgroundColor="bluette"   zPosition="-1" />
+		<eLabel position="900,937"  size="352,10"   backgroundColor="bluette" zPosition="0"  />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="bluette"   zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="bluette"   zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"    backgroundColor="bluette"   zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+
+	<!-- P800_pig Extensions FHD -->
+	<screen name="p800_pig" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Footer -->
+		<eLabel position="1260,30" size="610,96" backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32" size="606,92" backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1260,955" size="250,95" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93" backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050" alphatest="blend">
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red" alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60" pixmap="icons/select.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80" pixmap="icons/clock50.png" alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>
+		<widget backgroundColor="black" font="Regular; 34" foregroundColor="yellow" halign="left" position="1270,770" render="Label" size="260,35" source="session.CurrentService" transparent="1" zPosition="3" text="CPU: 100%">
+  <convert type="CpuUsage">Total</convert>
+</widget>
+		  <widget source="session.CurrentService" render="Label" zPosition="6" position="1270,810" size="300,120" halign="left" valign="center" font="Regular; 34" transparent="1" foregroundColor="grey" backgroundColor="black">
+    <convert type="pliLayoutInfo">MemTotal</convert>
+  </widget>
+		<widget source="session.VideoPicture" render="Pig" position="1270,151" zPosition="2" size="590,332" backgroundColor="transparent" transparent="0" />
+	<widget source="session.CurrentService" render="Label" position="1280,500" size="500,40" font="Regular;30" backgroundColor="#10000000" foregroundColor="#e8e9b1" transparent="1" zPosition="99">
+            <convert type="EGStbInfo">All</convert>
+            </widget>						
+	</screen>
+
+	<!-- P800 Extensions FHD -->
+	<screen name="p800_Ext" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="#201b3c85" zPosition="-2" />
+	</screen>
+	
+	<!-- P800 Extensions FHD -->
+	<screen name="p8001_Ext" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+	</screen>
+
+	<!-- P800 Extensions FHD -->
+	<screen name="p800_Ext_Bi" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="#10000000" zPosition="-2" />
+		<eLabel position="1260,510" size="610,432" backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1260,510" size="610,10"  backgroundColor="#FF000000" zPosition="-1" />
+	</screen>
+
+	<!-- P800 Extensions FHD -->
+	<screen name="p800_Ext_BiN" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel position="1260,30"  size="610,96"  backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1262,32"  size="606,92"  backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,140" size="610,802" backgroundColor="#201b3c85" zPosition="-2" />
+		<eLabel position="1260,510" size="610,432" backgroundColor="#20000000" zPosition="-2" />
+		<eLabel position="1260,510" size="610,10"  backgroundColor="#FF000000" zPosition="-1" />
+	</screen>
+
+	<!-- P800 Logo FHD -->
+	<screen name="p800_Logo" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Logo -->
+		<ePixmap position="930,160" size="400,700" pixmap="menu/teamlogo.png"  alphatest="blend" zPosition="1" />
+		<ePixmap position="895,180" size="15,720"  pixmap="buttons/barlogofull.png" alphatest="blend" zPosition="2" />
+	</screen>
+
+	<!-- P800 Logo FHD -->
+	<screen name="p800_Logo_Nobar" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Logo -->
+		<ePixmap position="930,160" size="400,700" pixmap="menu/teamlogo.png"  alphatest="blend" zPosition="1" />
+	</screen>
+
+	<!-- P800 LogoSeparator FHD -->
+	<screen name="p800_LogoSep" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<eLabel  position="1260,140" size="610,330" backgroundColor="#20000000" zPosition="2"/>
+		<ePixmap position="1440,175" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" zPosition="5" />
+		<eLabel  position="1260,470" size="620,10"  backgroundColor="#FF000000" zPosition="2"/>
+	</screen>
+
+	<!-- P800 DateMid FHD -->
+	<screen name="p800_DateMid" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Date -->
+		<widget source="global.CurrentTime" render="Label" position="930,30" size="300,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+			<convert type="ClockToText">Format %A %d %B</convert>
+		</widget>
+	</screen>
+
+	<!-- P800 Date FHD -->
+	<screen name="p800_Date" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Date -->
+		<widget source="global.CurrentTime" render="Label" position="1550,30" size="300,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+			<convert type="ClockToText">Format %A %d %B</convert>
+		</widget>
+	</screen>
+
+	<!-- P900 Template FHD -->
+	<screen name="p900_Template" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- 900p Upper Panel -->
+		<eLabel position="50,30"    size="1820,96" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,32"    size="1816,91" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Code -->
+		<ePixmap position="48,28" size="52,52" pixmap="buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="75,50" size="52,70" pixmap="icons/list.png"      alphatest="blend" zPosition="2" />
+		<widget source="Title" render="Label" position="150,30" size="900,95" font="Regular;45" halign="left" valign="center" foregroundColor="ltbluette" backgroundColor="#10000000" transparent="1" zPosition="1" />
+		<!-- Middle -->
+		<eLabel position="50,140"   size="1820,800" backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,142"   size="1816,795" backgroundColor="#20000000" zPosition="-1" />
+		<!-- Footer -->
+		<eLabel position="50,955"   size="1200,95"  backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="52,957"   size="1198,93"  backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1260,955" size="250,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1262,957" size="248,93"   backgroundColor="#20000000" zPosition="-1" />
+		<eLabel position="1520,955" size="350,95"   backgroundColor="#201b3c85" zPosition="-1" />
+		<eLabel position="1522,957" size="348,93"   backgroundColor="#20000000" zPosition="-1" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="Watches" position="1539,974" size="60,60" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1539,973" size="60,60" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Watches" position="1544,979" size="50,50" zPosition="2" foregroundColor="red"     alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
+		<!-- Clock %d.%m.%Y - %H:%M:%S --> 
+		<ePixmap position="1275,975" size="90,60"   pixmap="icons/select.png"    alphatest="blend" zPosition="2" />
+		<ePixmap position="1535,970" size="80,80"   pixmap="icons/clock50.png"   alphatest="blend" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1610,955" size="250,95" font="Regular;55" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#10101010" transparent="1" zPosition="1">
+			<convert type="ClockToText">Format:%H:%M:%S</convert>
+		</widget>				
+	</screen>
+
+	<!-- P900 Date FHD -->
+	<screen name="p900_Date" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
+		<!-- Date -->
+		<widget source="global.CurrentTime" render="Label" position="1550,30" size="300,95" font="Regular;35" halign="right" valign="center" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+			<convert type="ClockToText">Format %A %d %B</convert>
+		</widget>
+	</screen>
+
+	<!-- Button Templates Colors Name FHD -->
+
+	<screen name="nR">
+		<!-- Keys Buttons FHD -->
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_red" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+	
+	<screen name="nRG">
+		<!-- Keys Buttons FHD -->
+		<panel name="nR" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_green"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+		
+	<screen name="nRGY">
+		<!-- Keys Buttons FHD -->
+		<panel name="nRG" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_yellow" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="nRGYB">
+		<!-- Keys Buttons FHD -->
+		<panel name="nRGY" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="nRB">
+		<!-- Keys Buttons FHD -->
+		<panel name="nR" />
+		<ePixmap position="360,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_blue"  position="390,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="nRGB">
+		<!-- Keys Buttons FHD -->
+		<panel name="nRG" />
+		<ePixmap position="640,988" pixmap="buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="key_blue" position="680,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+	
+	<!-- Button Templates Colors NoKeyName FHD -->
+
+	<screen name="nkR">
+		<!-- Keys Buttons FHD -->
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="red" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+	
+	<screen name="nkRG">
+		<!-- Keys Buttons FHD -->
+		<panel name="nkR" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="green"  position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="nkRGY">
+		<!-- Keys Buttons FHD -->
+		<panel name="nkRG" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="yellow" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="nkRGYB">
+		<!-- Keys Buttons FHD -->
+		<panel name="nkRGY" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="blue" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="nkRB">
+		<!-- Keys Buttons DRE -->
+		<panel name="nkR" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget name="blue"  position="400,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+		
+	<!-- Button Templates Colors Source DRE -->
+
+	<screen name="sR">
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_red" render="Label" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="sRG">
+		<panel name="sR"/>
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_green" render="Label" position="400,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="sRGY">
+		<panel name="sRG"/>
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_yellow" render="Label" position="680,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+	
+	<screen name="sRGYB">
+		<panel name="sRGY"/>
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_blue" render="Label" position="950,955" size="250,105" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+	
+	<screen name="sRGB">
+		<panel name="sRG"/>
+		<ePixmap position="640,988" pixmap="buttons/bluepanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_blue" render="Label" position="680,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+	
+	<screen name="sRB">
+		<panel name="sR"/>
+		<ePixmap position="360,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_blue" render="Label" position="400,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="sRY">
+		<panel name="sR"/>
+		<ePixmap position="360,988" pixmap="buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_yellow" render="Label" position="400,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="sRYB">
+		<panel name="sRY"/>
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_yellow" render="Label" position="680,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_blue" render="Label" position="950,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="sYB">
+		<ePixmap position="70,988"  pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_yellow" render="Label" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="360,988" pixmap="buttons/bluepanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_blue" render="Label" position="400,955" size="250,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<!-- Button Templates Colors NoKeySource FHD -->
+
+	<screen name="skR">
+		<!-- Keys Buttons FHD -->
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="red" render="Label" position="120,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+	
+	<screen name="skRG">
+		<!-- Keys Buttons FHD -->
+		<panel name="skR" />
+		<ePixmap position="360,988" pixmap="buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="green" render="Label" position="400,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="skRGY">
+		<!-- Keys Buttons FHD -->
+		<panel name="skRG" />
+		<ePixmap position="640,988" pixmap="buttons/yellowpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="yellow" render="Label" position="680,955" size="210,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="skRGYB">
+		<!-- Keys Buttons FHD -->
+		<panel name="skRGY" />
+		<ePixmap position="910,988" pixmap="buttons/bluepanel.png"   size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="blue" render="Label" position="950,955" size="250,95" zPosition="1" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
+	</screen>
+
+	<screen name="MI">
+		<!-- Keys Buttons DRE -->
+		<eLabel text="Menu" position="1390,965"  size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+		<eLabel text="Info" position="1390,1002" size="200,43" font="Regular;32" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="M">
+		<!-- Keys Buttons DRE -->
+		<eLabel text="Menu" position="1390,940" size="200,95" font="Regular;34" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="I">
+		<!-- Keys Buttons DRE -->
+		<eLabel text="Info" position="1390,940" size="200,95" font="Regular;34" valign="center" foregroundColor="#b0b0b0" backgroundColor="#101010" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="fakeExit">
+		<ePixmap position="70,988"  pixmap="buttons/redpanel.png" size="30,30" alphatest="blend" zPosition="2" />
+		<eLabel text="Exit" position="120,955" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+	</screen>
+
+	<screen name="infocolor">
+		<widget source="session.CurrentService" render="Label" position="100,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelred</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="400,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelgreen</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="700,1007"  size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelyellow</convert>
+		</widget>		
+		<widget source="session.CurrentService" render="Label" position="1000,1007" size="200,40" backgroundColor="header" zPosition="10" transparent="0" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">labelblue</convert>
+		</widget>
+	</screen>
+
+	<screen name="plugincolor">
+		<widget source="session.CurrentService" render="Label" position="120,955"  size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">pluginred</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="405,955"  size="300,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">plugingreen</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="685,955"  size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">pluginyellow</convert>
+		</widget>		
+		<widget source="session.CurrentService" render="Label" position="1000,955" size="200,95" valign="center" backgroundColor="header" zPosition="1" transparent="1" font="Regular;34" halign="left" >
+			<convert type="Colorlabel">pluginblue</convert>
+		</widget>
+	</screen>
+
+</skin>
