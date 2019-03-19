@@ -119,13 +119,13 @@
 		<convert type="ClockToText">Format:%M</convert>
 		</widget>-->
 		<!-- Weather infobar -->
-		<widget alphatest="blend" render="MSNWeatherPixmap" position="1778,610" size="150,113" source="session.MSNWeather" transparent="1" zPosition="1">
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="1778,600" size="150,113" source="session.MSNWeather" transparent="1" zPosition="1">
 		<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy-Weather-FHD/msn/msn3d/,png</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular; 30" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1451,777" size="450,39" source="session.MSNWeather" zPosition="1" halign="right" transparent="1" foregroundColor="green">
+		<widget noWrap="1" backgroundColor="background" font="Regular; 30" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1451,777" size="450,39" source="session.MSNWeather" zPosition="1" halign="right" transparent="1" foregroundColor="white">
 		<convert type="MSNWeather">temperature_text,current</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular; 48" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1751,708" size="150,68" source="session.MSNWeather" transparent="1" zPosition="1" halign="right" foregroundColor="unff0000" text="45 `C" valign="top">
+		<widget noWrap="1" backgroundColor="background" font="Regular; 48" render="TypeLabel" typeSpeed="1500" typeCaret="_" position="1751,713" size="150,68" source="session.MSNWeather" transparent="1" zPosition="1" halign="right" foregroundColor="unff0000" text="45 `C" valign="top">
 		<convert type="MSNWeather">temperature_current</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular; 30" render="TypeLabel" typeSpeed="1500" typeCaret="_" foregroundColor="ltbluette" position="1452,826" size="449,62" source="session.MSNWeather" zPosition="1" halign="right" transparent="1">

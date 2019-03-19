@@ -28,7 +28,6 @@
 		<font name="Console"     filename="tuxtxt.ttf"      scale="100"/>
 		<font name="Fixed"       filename="andale.ttf"      scale="100"/>
 		<font name="Replacement" filename="ae_AlMateen.ttf" scale="100" replacement="1"/>
-		<font name="madhouse"     filename="/usr/share/enigma2/oDreamy-Weather-FHD/fonts/madhouse.ttf"   scale="93"/>
 		<font name="Regular"     filename="/usr/share/enigma2/oDreamy-Weather-FHD/fonts/verdana.ttf"   scale="93"/>
 		<font name="xRegular"    filename="/usr/share/fonts/nmsbd.ttf" scale="100"/>
 		<alias name="Body"                      font="Regular" size="32" height="50" />
