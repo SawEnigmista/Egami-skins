@@ -388,21 +388,31 @@
 	</screen>
 
 	<!-- Numerical help dialog FHD -->
-	<screen name="NumericalTextInputHelpDialog" position="70,620" size="608,215" backgroundColor="#10404040" zPosition="2" flags="wfNoBorder" >
-		<eLabel position="2,2" size="610,215" backgroundColor="#404040" zPosition="-1" />
-		<widget name="key1"  position="2,2"     size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key2"  position="204,2"   size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key3"  position="406,2"   size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key4"  position="2,54"    size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key5"  position="204,54"  size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key6"  position="406,54"  size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key7"  position="2,106"   size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key8"  position="204,106" size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key9"  position="406,106" size="200,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="help1" position="2,158"   size="100,50" font="Regular;30" halign="center" valign="center" />
-		<widget name="key0"  position="104,158" size="400,50" font="Regular;28" halign="center" valign="center" />
-		<widget name="help2" position="506,158" size="100,50" font="Regular;30" halign="center" valign="center" />
-		<!--eLabel name="DEBUG" text="S022" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	<screen name="NumericalTextInputHelpDialog" position="0,0" zPosition="2" size="1920,50" backgroundColor="dark" flags="wfNoBorder" transparent="0">
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_1.png" position="8,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_2.png" position="158,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_3.png" position="323,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_4.png" position="488,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_5.png" position="653,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_6.png" position="810,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_7.png" position="975,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_8.png" position="1155,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_9.png" position="1320,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_prev.png" position="1500,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_next.png" position="1583,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="oDreamy-Weather-FHD/buttons/key_0.png" position="1665,0" size="53,45" zPosition="0" alphatest="blend" transparent="1" />
+		<widget name="key1" position="68,6" size="98,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key2" position="218,6" size="98,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key3" position="383,6" size="98,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key4" position="548,6" size="98,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key5" position="713,6" size="98,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key6" position="870,6" size="100,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key7" position="1035,6" size="113,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key8" position="1215,6" size="98,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key9" position="1380,6" size="123,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="help1" position="1643,5" size="15,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="key0" position="1725,6" size="218,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
+		<widget name="help2" position="1559,5" size="15,36" font="Regular; 21" halign="left" valign="center" transparent="1" zPosition="1" backgroundColor="black" foregroundColor="white" />
 	</screen>
 
 	<!-- Help menu FHD -->
